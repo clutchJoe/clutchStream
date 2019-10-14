@@ -1,0 +1,38 @@
+{
+  "uuid": "64350b50-a810-4901-b86b-7a5106bdef2c",
+  "title": "clutch Stream",
+  "channels": [
+    {
+      "name": "Latest update (10.14/16:46)",
+      "url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
+    },
+    {
+      "name": "Cleveland Cavaliers vs Boston Celtics  (October 13th, 2019 - 3:00 PM ET)",
+      "url": "http://the.spursz.xyz/hls/nbatv.m3u8"
+    },
+    {
+      "name": "Melbourne United vs LA Clippers  (October 13th, 2019 - 3:30 PM ET)",
+      "url": "http://the.spursz.xyz/hls/lac.m3u8"
+    },
+    {
+      "name": "New Orleans Pelicans vs San Antonio Spurs  (October 13th, 2019 - 4:00 PM ET)",
+      "url": "http://the.spursz.xyz/hls/sas.m3u8"
+    },
+    {
+      "name": "Philadelphia 76ers vs Orlando Magic  (October 13th, 2019 - 6:00 PM ET)",
+      "url": "http://the.spursz.xyz/hls/orl.m3u8"
+    },
+    {
+      "name": "Chicago Buls vs Toronto Raptors  (October 13th, 2019 - 6:00 PM ET)",
+      "url": "http://the.spursz.xyz/hls/tor.m3u8"
+    },
+    {
+      "name": "Milwaukee Bucks vs Washington Wizards  (October 13th, 2019 - 6:00 PM ET)",
+      "url": "http://live3.nba4free.com/hls/nbatv.m3u8"
+    },
+    {
+      "name": "Haifa Maccabi Haifa vs Minnesota Timberwolves  (October 13th, 2019 - 8:00 PM ET)",
+      "url": "http://live3.nba4free.com/hls/min.m3u8"
+    }
+  ]
+}

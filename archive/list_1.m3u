@@ -1,0 +1,26 @@
+#EXTM3U
+
+#EXTINF:-1, Latest update (10.14/16:46)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, Cleveland Cavaliers vs Boston Celtics  October 13th, 2019 - 3:00 PM ET
+http://the.spursz.xyz/hls/nbatv.m3u8
+
+#EXTINF:-1, Melbourne United vs LA Clippers  October 13th, 2019 - 3:30 PM ET
+http://the.spursz.xyz/hls/lac.m3u8
+
+#EXTINF:-1, New Orleans Pelicans vs San Antonio Spurs  October 13th, 2019 - 4:00 PM ET
+http://the.spursz.xyz/hls/sas.m3u8
+
+#EXTINF:-1, Philadelphia 76ers vs Orlando Magic  October 13th, 2019 - 6:00 PM ET
+http://the.spursz.xyz/hls/orl.m3u8
+
+#EXTINF:-1, Chicago Buls vs Toronto Raptors  October 13th, 2019 - 6:00 PM ET
+http://the.spursz.xyz/hls/tor.m3u8
+
+#EXTINF:-1, Milwaukee Bucks vs Washington Wizards  October 13th, 2019 - 6:00 PM ET
+http://live3.nba4free.com/hls/nbatv.m3u8
+
+#EXTINF:-1, Haifa Maccabi Haifa vs Minnesota Timberwolves  October 13th, 2019 - 8:00 PM ET
+http://live3.nba4free.com/hls/min.m3u8
+
