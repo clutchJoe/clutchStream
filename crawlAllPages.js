@@ -5,6 +5,7 @@ const site_1 = require("./crawlingPages/site_1");
 const site_2 = require("./crawlingPages/site_2");
 const writeJson = require("./writeFile/json");
 const writeM3u = require("./writeFile/m3u");
+const writeConf = require("./writeFile/conf");
 
 module.exports = async () => {
     let data = [];
@@ -29,6 +30,7 @@ module.exports = async () => {
     writeJson(data[1], "list_2.json");
     writeM3u(data[0], "list_1.m3u");
     writeM3u(data[1], "list_2.m3u");
+    writeConf(data);
     console.log(new Date());
 
     return await data;

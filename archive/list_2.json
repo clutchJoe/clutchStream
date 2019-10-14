@@ -3,36 +3,12 @@
   "title": "clutch Stream",
   "channels": [
     {
-      "name": "Latest update (10.14/16:46)",
+      "name": "Latest update (10.14/20:17)",
       "url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
     },
     {
-      "name": "(No Signal) Maccabi Haifa vs Minnesota Timberwolves  (13/10/2019 8:00 PM)",
+      "name": "No Signal",
       "url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
-    },
-    {
-      "name": "Milwaukee Bucks vs Washington Wizards  (13/10/2019 6:00 PM)",
-      "url": "http://cdn.youpit.site/live/Cavaliers/chunks.m3u8"
-    },
-    {
-      "name": "Chicago Bulls vs Toronto Raptors  (13/10/2019 6:00 PM)",
-      "url": "http://cdn.youpit.site/live/Bulls/chunks.m3u8"
-    },
-    {
-      "name": "Philadelphia 76ers vs Orlando Magic  (13/10/2019 6:00 PM)",
-      "url": "http://edge6.xmediaget.com/hls-live/xmlive/_definst_/2736674/2736674.m3u8?refId=1996"
-    },
-    {
-      "name": "New Orleans Pelicans vs San Antonio Spurs  (13/10/2019 4:00 PM)",
-      "url": "http://185.233.186.254:8080/hls/streama104229/index.m3u8?st=UVlPFY73epKWVuaPbwf9hQ"
-    },
-    {
-      "name": "(No Signal) Melbourne United vs LA Clippers  (13/10/2019 3:30 PM)",
-      "url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
-    },
-    {
-      "name": "Cleveland Cavaliers vs Boston Celtics  (13/10/2019 3:00 PM)",
-      "url": "http://cdn.youpit.site/live/Cavaliers/chunks.m3u8"
     }
   ]
 }

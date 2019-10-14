@@ -6,21 +6,38 @@ const fetchData = require("./crawlAllPages.js");
 
 const rule = new schedule.RecurrenceRule();
 rule.second = 0;
-rule.minute = [45, 55];
+rule.minute = [25, 55];
 
-// app.use("/archive", express.static(__dirname + "/archive/"));
 let source = [
     { head: "Updating..." }
 ];
+
 app.get("/live", (req, res) => {
-    res.send([...source[0], ...source[1]]).end();
+    if (source[0].head === "Updating...") {
+        res.send([{ head: "Updating..." }]).end();
+    } else {
+        res.send([...source[0], ...source[1]]).end();
+    }
 });
 app.get("/live_1", (req, res) => {
-    res.send(source[0]).end();
+    if(source[0].head === "Updating..."){
+        res.send([{ head: "Updating..." }]).end();
+    } else if(source[0] == false){
+        res.send([{ head: "Updating..." }]).end();
+    } else {
+        res.send(source[0]).end();
+    }
 });
 app.get("/live_2", (req, res) => {
-    res.send(source[1]).end();
+    if (source[0].head === "Updating...") {
+        res.send([{ head: "Updating..." }]).end();
+    } else if(source[1] == false){
+        res.send([{ head: "Updating..." }]).end();
+    } else {
+        res.send(source[1]).end();
+    }
 });
+
 schedule.scheduleJob(rule, async () => {
     source = await fetchData();
 });
