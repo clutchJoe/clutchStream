@@ -1,8 +1,17 @@
-const site_1 = async page => {
-    return new Promise(async (resolve, reject) => {
-        const data = await page.evaluate(() => {
-            let lists = [];
-            const items = document.querySelectorAll(".container .col-md-8 a");
+require("dotenv").config({ path: "../.env" });
+// const puppeteer = require("puppeteer");
+
+module.exports = async (page) => {
+    // const bowser = await puppeteer.launch({ headless: false }); // { headless: false },{ args: ['--no-sandbox'] }
+    // const page = await bowser.newPage();
+    await page.goto(process.env.SITE_1, { waitUntil: "networkidle2" });
+    const data = await page.evaluate(() => {
+        let lists = [];
+        const items = Array.from(document.querySelectorAll(".container .col-md-8 a"));
+        // 判断是否为空数组
+        if(items == false){
+            return items;
+        } else {
             for (let item of items) {
                 let data = {};
                 data.head = item.children[0].children[1].children[0].innerText;
@@ -11,14 +20,13 @@ const site_1 = async page => {
                 lists.push(data);
             }
             return lists;
-        });
+        }
+    });
 
+    if(!(data == false)){
         for (let item of data) {
             await page.goto(item.link, { waitUntil: "networkidle2" });
-            const phpLink = await page.$$eval(
-                "iframe",
-                iframes => iframes.filter(iframe => iframe.src.endsWith(".php"))[0].src
-            );
+            const phpLink = await page.$$eval("iframe", iframes => iframes.filter(iframe => iframe.src.endsWith(".php"))[0].src);
             await page.goto(phpLink, { waitUntil: "networkidle2" });
             const sourceLink = await page.$eval(
                 "body script",
@@ -30,8 +38,9 @@ const site_1 = async page => {
             );
             item.link = sourceLink;
         }
-        resolve(data);
-    }).catch(err => console.error(err));
-};
+    }
 
-module.exports = site_1;
+    // console.log(data);
+    return data;
+    // await bowser.close();
+};

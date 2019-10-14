@@ -2,7 +2,7 @@ const path = require("path");
 const express = require("express");
 const app = express();
 const schedule = require("node-schedule");
-const fetchData = require("./crawlAllPages.js");
+const fetchData = require("./crawlAllPages");
 
 const rule = new schedule.RecurrenceRule();
 rule.second = 0;
