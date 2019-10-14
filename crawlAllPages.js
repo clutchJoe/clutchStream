@@ -37,6 +37,7 @@ module.exports = async () => {
     const p1 = await site_1(page);
     const p2 = await site_2(page);
     const data = [p1, p2];
+    await bowser.close();
     console.log("End of crawl...");
     writeJson(data[0], "list_1.json");
     writeJson(data[1], "list_2.json");
