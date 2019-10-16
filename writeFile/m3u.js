@@ -8,7 +8,13 @@ module.exports = (data, name) => {
     if(data == false){
     	m3u += `#EXTINF:-1, No Signal\nhttps://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8`
     }else{
-    	data.map(item => m3u += `#EXTINF:-1, ${item.head}  (${item.updateTime})\n${item.link}\n\n`);
+    	data.map(item => {
+            if(item.updateTime.indexOf(',') != -1){
+                m3u += `#EXTINF:-1, ${item.head}  (${item.updateTime.split(',').join(" ")})\n${item.link}\n\n`;
+            }else{
+                m3u += `#EXTINF:-1, ${item.head}  (${item.updateTime})\n${item.link}\n\n`;
+            }
+        });
     }
     fs.writeFile(`./archive/${name}`, m3u, err => {
         if (err) throw err;

@@ -1,7 +1,17 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.15/0:8)
+#EXTINF:-1, Latest update (10.16/22:2)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, No Signal
+#EXTINF:-1, (No Signal) Detroit Pistons vs Philadelphia 76ers  (15/10/2019 7:00 PM)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) Boston Celtics vs Cleveland Cavaliers  (15/10/2019 7:00 PM)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, Oklahoma City Thunder vs Dallas Mavericks  (14/10/2019 8:30 PM)
+http://live3.nba4free.com/hls/nop1.m3u8
+
+#EXTINF:-1, Atlanta Hawks vs Miami Heat  (14/10/2019 7:30 PM)
+http://edge6.xmediaget.com/hls-live/xmlive/_definst_/2739016/2739016.m3u8?refId=1996
+

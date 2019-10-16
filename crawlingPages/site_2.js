@@ -4,7 +4,7 @@ require("dotenv").config({ path: "../.env" });
 module.exports = async (page) => {
     // const bowser = await puppeteer.launch({ headless: false }); // { headless: false },{ args: ['--no-sandbox'] }
     // const page = await bowser.newPage();
-    await page.goto(process.env.SITE_2, { waitUntil: "networkidle2" });
+    await page.goto(process.env.SITE_2);
     const data = await page.evaluate(() => {
         let lists = [];
         const temp = document.querySelector(".bg-white.rounded.box-shadow");
@@ -27,6 +27,7 @@ module.exports = async (page) => {
     if(!(data == false)){
     	for (let item of data) {
 	        await page.goto(item.link, { waitUntil: "networkidle2" });
+            await page.frames();
 	        const phpLink = await page.$$eval("iframe", iframes => iframes.filter(iframe => iframe.src.indexOf(".php") != -1)[0].src);
 	        await page.goto(phpLink, { waitUntil: "networkidle2" });
 	        const sourceLink = await page.$$eval(

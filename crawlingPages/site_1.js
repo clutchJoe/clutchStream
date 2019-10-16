@@ -26,6 +26,7 @@ module.exports = async (page) => {
     if(!(data == false)){
         for (let item of data) {
             await page.goto(item.link, { waitUntil: "networkidle2" });
+            await page.frames();
             const phpLink = await page.$$eval("iframe", iframes => iframes.filter(iframe => iframe.src.endsWith(".php"))[0].src);
             await page.goto(phpLink, { waitUntil: "networkidle2" });
             const sourceLink = await page.$eval(
@@ -36,7 +37,12 @@ module.exports = async (page) => {
                         .split('source: "')[1]
                         .split('",')[0]
             );
-            item.link = sourceLink;
+            if(sourceLink == ""){
+                item.head = "(No Signal) "  + item.head;
+                item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+            }else{
+                item.link = sourceLink;
+            }
         }
     }
 

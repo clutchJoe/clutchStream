@@ -1,6 +1,5 @@
 require("dotenv").config();
 const puppeteer = require("puppeteer");
-const fs = require("fs");
 const site_1 = require("./crawlingPages/site_1");
 const site_2 = require("./crawlingPages/site_2");
 const writeJson = require("./writeFile/json");
