@@ -38,8 +38,8 @@ module.exports = async () => {
     const data = [p1, p2];
     await bowser.close();
     console.log("End of crawl...");
-    writeJson(data[0], "list_1.json");
-    writeJson(data[1], "list_2.json");
+    // writeJson(data[0], "list_1.json");
+    // writeJson(data[1], "list_2.json");
     writeM3u(data[0], "list_1.m3u");
     writeM3u(data[1], "list_2.m3u");
     writeConf(data);
