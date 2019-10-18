@@ -27,11 +27,17 @@ module.exports = async (page) => {
     	for (let item of data) {
 	        await page.goto(item.link, { waitUntil: "networkidle2" });
             // await page.frames();
-	        const sourceLink = await page.$$eval("body script", el =>{
-                if(el.every(i => i.textContent==="")){
+	        const sourceLink = await page.$$eval("body script", el => {
+                // if(el.every(i => i.textContent==="")){
+                //     return false;
+                // } else {
+                //     const tar = el.filter(script => script.textContent.trim().startsWith("window.onload = function"));
+                //     return tar[0].textContent.split(",")[0].split("'")[1];
+                // }
+                const tar = el.filter(script => script.textContent.trim().startsWith("window.onload = function"));
+                if (tar == false) {
                     return false;
                 } else {
-                    const tar = el.filter(script => script.textContent.trim().startsWith("window.onload = function"));
                     return tar[0].textContent.split(",")[0].split("'")[1];
                 }
             });
