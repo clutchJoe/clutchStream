@@ -37,6 +37,15 @@ app.get("/live_2", (req, res) => {
         res.send(source[1]).end();
     }
 });
+app.get("/live_3", (req, res) => {
+    if (source[0].head === "Updating...") {
+        res.send([{ head: "Updating..." }]).end();
+    } else if(source[2] == false){
+        res.send([{ head: "Updating..." }]).end();
+    } else {
+        res.send(source[2]).end();
+    }
+});
 
 schedule.scheduleJob(rule, async () => {
     source = await fetchData();

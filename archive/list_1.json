@@ -3,36 +3,12 @@
   "title": "clutch Stream",
   "channels": [
     {
-      "name": "Latest update (10.16/22:2)",
+      "name": "Latest update (10.18/16:21)",
       "url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
     },
     {
-      "name": "Detroit Pistons vs Charlotte Hornets  (October 16th, 2019 - 7:00 PM ET)",
-      "url": "http://the.wizardz.xyz/show/bos/playlist.m3u8"
-    },
-    {
-      "name": "Atlanta Hawks vs New York Knicks  (October 16th, 2019 - 8:00 PM ET)",
-      "url": "http://the.wizardz.xyz/show/min/playlist.m3u8"
-    },
-    {
-      "name": "San Antonio Spurs vs Houston Rockets  (October 16th, 2019 - 8:00 PM ET)",
-      "url": "http://the.wizardz.xyz/show/nbatv/playlist.m3u8"
-    },
-    {
-      "name": "Memphis Grizzlies vs Oklahoma City Thunder  (October 16th, 2019 - 8:00 PM ET)",
-      "url": "http://the.wizardz.xyz/show/uta/playlist.m3u8"
-    },
-    {
-      "name": "Portland Trail Blazers vs Utah Jazz  (October 16th, 2019 - 9:00 PM ET)",
-      "url": "http://the.wizardz.xyz/show/den/playlist.m3u8"
-    },
-    {
-      "name": "Melbourne United vs Sacramento Kings  (October 16th, 2019 - 10:00 PM ET)",
-      "url": "http://the.wizardz.xyz/show/nbatv/playlist.m3u8"
-    },
-    {
-      "name": "Golden State Warriors vs Los Angeles Lakers  (October 16th, 2019 - 10:30 PM ET)",
-      "url": "http://live3.nba4free.com/hls/min.m3u8"
+      "name": "No Signal",
+      "url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
     }
   ]
 }

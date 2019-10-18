@@ -3,24 +3,12 @@
   "title": "clutch Stream",
   "channels": [
     {
-      "name": "Latest update (10.16/22:2)",
+      "name": "Latest update (10.18/16:20)",
       "url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
     },
     {
-      "name": "(No Signal) Detroit Pistons vs Philadelphia 76ers  (15/10/2019 7:00 PM)",
+      "name": "No Signal",
       "url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
-    },
-    {
-      "name": "(No Signal) Boston Celtics vs Cleveland Cavaliers  (15/10/2019 7:00 PM)",
-      "url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
-    },
-    {
-      "name": "Oklahoma City Thunder vs Dallas Mavericks  (14/10/2019 8:30 PM)",
-      "url": "http://live3.nba4free.com/hls/nop1.m3u8"
-    },
-    {
-      "name": "Atlanta Hawks vs Miami Heat  (14/10/2019 7:30 PM)",
-      "url": "http://edge6.xmediaget.com/hls-live/xmlive/_definst_/2739016/2739016.m3u8?refId=1996"
     }
   ]
 }

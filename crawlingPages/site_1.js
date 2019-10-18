@@ -4,7 +4,12 @@ require("dotenv").config({ path: "../.env" });
 module.exports = async (page) => {
     // const bowser = await puppeteer.launch({ headless: false }); // { headless: false },{ args: ['--no-sandbox'] }
     // const page = await bowser.newPage();
+    // page.on('requestfailed', err => {
+    //     console.error(err);
+    //     return [];
+    // });
     await page.goto(process.env.SITE_1, { waitUntil: "networkidle2" });
+
     const data = await page.evaluate(() => {
         let lists = [];
         const items = Array.from(document.querySelectorAll(".container .col-md-8 a"));
