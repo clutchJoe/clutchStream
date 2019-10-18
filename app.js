@@ -16,7 +16,7 @@ app.get("/live", (req, res) => {
     if (source[0].head === "Updating...") {
         res.send([{ head: "Updating..." }]).end();
     } else {
-        res.send([...source[0], ...source[1]]).end();
+        res.send(source).end();
     }
 });
 app.get("/live_1", (req, res) => {
