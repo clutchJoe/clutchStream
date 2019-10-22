@@ -1,3 +1,4 @@
+require("dotenv").config();
 const path = require("path");
 const express = require("express");
 const app = express();
@@ -45,6 +46,10 @@ app.get("/live_3", (req, res) => {
     } else {
         res.send(source[2]).end();
     }
+});
+app.get("/archive/all.list", (req, res) => {
+    res.set('Content-Type', 'text/plain');
+    res.send(`[clutch stream][site 1],${process.env.WEB_1}\n[clutch stream][site 2],${process.env.WEB_2}\n[clutch stream][site 3],${process.env.WEB_3}\n`).end();
 });
 
 schedule.scheduleJob(rule, async () => {
