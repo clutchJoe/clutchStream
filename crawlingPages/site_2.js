@@ -28,7 +28,16 @@ module.exports = async (page) => {
     	for (let item of data) {
 	        await page.goto(item.link, { waitUntil: "networkidle2" });
             await page.frames();
-	        const phpLink = await page.$$eval("iframe", iframes => iframes.filter(iframe => iframe.src.indexOf(".php") != -1)[0].src);
+            let phpLink = "";
+            try {
+                phpLink = await page.$$eval("iframe", iframes => iframes.filter(iframe => iframe.src.indexOf(".php") != -1)[0].src);
+            } catch (err) {
+                console.error("No php link...");
+                item.head = "(No Signal) "  + item.head;
+                item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+                continue;
+            }
+	        // const phpLink = await page.$$eval("iframe", iframes => iframes.filter(iframe => iframe.src.indexOf(".php") != -1)[0].src);
 	        await page.goto(phpLink, { waitUntil: "networkidle2" });
 	        const sourceLink = await page.$$eval(
 	            "body script",
