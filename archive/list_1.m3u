@@ -1,23 +1,14 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.18/22:54)
+#EXTINF:-1, Latest update (10.24/21:45)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Washington Wizards at Philadelphia 76ers  (October 18th  2019 - 7:00 PM ET)
-http://the.wizardz.xyz/show/phi/playlist.m3u8
+#EXTINF:-1, Atlanta Hawks vs Detroit Pistons  (October 24th  2019 - 7:00 PM ET)
+http:///show/chi/playlist.m3u8
 
-#EXTINF:-1, Toronto Raptors vs Brooklyn Nets  (October 18th  2019 - 7:30 PM ET)
-http://the.wizardz.xyz/show/tor/playlist.m3u8
+#EXTINF:-1, Milwaukee Bucks vs Houston Rockets  (October 24th  2019 - 8:00 PM ET)
+http:///show/ind/playlist.m3u8
 
-#EXTINF:-1, Houston Rockets vs Miami Heat  (October 18th  2019 - 8:00 PM ET)
-http://the.wizardz.xyz/show/mia/playlist.m3u8
-
-#EXTINF:-1, New Orleans Pelicans vs New York Knicks  (October 18th  2019 - 8:00 PM ET)
-http://the.wizardz.xyz/show/tnt/playlist.m3u8
-
-#EXTINF:-1, Memphis Grizzlies vs New York Knicks  (October 18th  2019 - 8:30 PM ET)
-http://the.wizardz.xyz/show/mem/playlist.m3u8
-
-#EXTINF:-1, Los Angeles Lakers vs Golden State Warriors  (October 18th  2019 - 10:30 PM ET)
-http://the.wizardz.xyz/show/nbatv/playlist.m3u8
+#EXTINF:-1, Los Angeles Clippers vs Golden State Warriors  (October 24th  2019 - 10:30 PM ET)
+http:///show/cle/playlist.m3u8
 

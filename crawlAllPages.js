@@ -3,7 +3,9 @@ const puppeteer = require("puppeteer");
 const site_1 = require("./crawlingPages/site_1");
 const site_2 = require("./crawlingPages/site_2");
 const site_3 = require("./crawlingPages/site_3");
-const writeJson = require("./writeFile/json");
+const site_4 = require("./crawlingPages/site_4");
+const site_5 = require("./crawlingPages/site_5");
+const site_6 = require("./crawlingPages/site_6");
 const writeM3u = require("./writeFile/m3u");
 const writeConf = require("./writeFile/conf");
 
@@ -35,7 +37,15 @@ module.exports = async () => {
     // writeM3u(data[1], "list_2.m3u");
     // writeConf(data);
     // console.log(new Date());
-    console.log(`Start crawling sites\n${process.env.SITE_1}\n${process.env.SITE_2}\n${process.env.SITE_3}`);
+    console.log(
+        `Start crawling sites
+        ${process.env.SITE_1}
+        ${process.env.SITE_2}
+        ${process.env.SITE_3}
+        ${process.env.SITE_4}
+        ${process.env.SITE_5}
+        ${process.env.SITE_6}`
+    );
     try {
         const p1 = await site_1(page);
         data.push(p1);
@@ -57,13 +67,35 @@ module.exports = async () => {
         data.push([]);
         console.error(`Site_3 crawling has some error...`);
     }
+    try {
+        const p4 = await site_4(page);
+        data.push(p4);
+    } catch (err){
+        data.push([]);
+        console.error(`Site_4 crawling has some error...`);
+    }
+    try {
+        const p5 = await site_5(page);
+        data.push(p5);
+    } catch (err){
+        data.push([]);
+        console.error(`Site_5 crawling has some error...`);
+    }
+    try {
+        const p6 = await site_6(page);
+        data.push(p6);
+    } catch (err){
+        data.push([]);
+        console.error(`Site_6 crawling has some error...`);
+    }
     await bowser.close();
     console.log(`\nEnd of crawl...`);
-    // writeJson(data[0], "list_1.json");
-    // writeJson(data[1], "list_2.json");
     writeM3u(data[0], "list_1.m3u");
     writeM3u(data[1], "list_2.m3u");
     writeM3u(data[2], "list_3.m3u");
+    writeM3u(data[3], "list_4.m3u");
+    writeM3u(data[4], "list_5.m3u");
+    writeM3u(data[5], "list_6.m3u");
     writeConf(data);
     console.log(new Date());
     return await data;

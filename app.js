@@ -20,36 +20,33 @@ app.get("/live", (req, res) => {
         res.send(source).end();
     }
 });
-app.get("/live_1", (req, res) => {
-    if(source[0].head === "Updating..."){
-        res.send([{ head: "Updating..." }]).end();
-    } else if(source[0] == false){
-        res.send([{ head: "Updating..." }]).end();
-    } else {
-        res.send(source[0]).end();
-    }
-});
-app.get("/live_2", (req, res) => {
-    if (source[0].head === "Updating...") {
-        res.send([{ head: "Updating..." }]).end();
-    } else if(source[1] == false){
-        res.send([{ head: "Updating..." }]).end();
-    } else {
-        res.send(source[1]).end();
-    }
-});
-app.get("/live_3", (req, res) => {
-    if (source[0].head === "Updating...") {
-        res.send([{ head: "Updating..." }]).end();
-    } else if(source[2] == false){
-        res.send([{ head: "Updating..." }]).end();
-    } else {
-        res.send(source[2]).end();
-    }
-});
+// app.get("/live_1", (req, res) => {
+//     if(source[0].head === "Updating..."){
+//         res.send([{ head: "Updating..." }]).end();
+//     } else if(source[0] == false){
+//         res.send([{ head: "Updating..." }]).end();
+//     } else {
+//         res.send(source[0]).end();
+//     }
+// });
+// app.get("/live_2", (req, res) => {
+//     if (source[0].head === "Updating...") {
+//         res.send([{ head: "Updating..." }]).end();
+//     } else if(source[1] == false){
+//         res.send([{ head: "Updating..." }]).end();
+//     } else {
+//         res.send(source[1]).end();
+//     }
+// });
+
 app.get("/archive/all.list", (req, res) => {
     res.set('Content-Type', 'text/plain');
-    res.send(`[clutch stream][site 1],${process.env.WEB_1}\n[clutch stream][site 2],${process.env.WEB_2}\n[clutch stream][site 3],${process.env.WEB_3}\n`).end();
+    res.send(`[clutch stream][site 1],${process.env.WEB_1}
+[clutch stream][site 2],${process.env.WEB_2}
+[clutch stream][site 3],${process.env.WEB_3}
+[clutch stream][site 4],${process.env.WEB_4}
+[clutch stream][site 5],${process.env.WEB_5}
+[clutch stream][site 6],${process.env.WEB_6}`).end();
 });
 
 schedule.scheduleJob(rule, async () => {
