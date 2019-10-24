@@ -9,7 +9,13 @@ module.exports = (data) => {
 			group += `No Signal,https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8\n`;
 			text += group;
 		}else{
-			data[i].map(item => group += `${item.head}  (${item.updateTime}),${item.link}\n`);
+			data[i].map(item => {
+				if (item.updateTime.indexOf(',') != -1){
+					group += `${item.head}  (${item.updateTime.split(',').join(" ")}),${item.link}\n`;
+				} else {
+					group += `${item.head}  (${item.updateTime}),${item.link}\n`;
+				}
+			});
 			text += group;
 		}
 	}
