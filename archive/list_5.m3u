@@ -1,14 +1,32 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.24/21:45)
+#EXTINF:-1, Latest update (10.25/18:53)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) DETROIT PISTONS VS ATLANTA HAWKS  (10/24/2019 07.00PM EST)
+#EXTINF:-1, (No Signal) MINNESOTA TIMBERWOLVES VS CHARLOTTE HORNETS  (10/25/2019 07.00PM EST)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) HOUSTON ROCKETS VS MILWAUKEE BUCKS  (10/24/2019 08.00PM EST)
+#EXTINF:-1, (No Signal) TORONTO RAPTORS VS BOSTON CELTICS  (10/25/2019 07.00PM EST)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) GOLDEN STATE WARRIORS VS LOS ANGELES CLIPPERS  (10/24/2019 10.30PM EST)
+#EXTINF:-1, (No Signal) NEW YORK KNICKS VS BROOKLYN NETS  (10/25/2019 07.30PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) WASHINGTON WIZARDS VS OKLAHOMA CITY THUNDER  (10/25/2019 08.00PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) CHICAGO BULLS AT MEMPHIS GRIZZLIES  (10/25/2019 08.00PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) DALLAS MAVERICKS AT NEW ORLEANS PELICANS  (10/25/2019 08.00PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) PHOENIX SUNS VS DENVER NUGGETS  (10/25/2019 09.00PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) PORTLAND TRAIL BLAZERS VS SACRAMENTO KINGS  (10/25/2019 10.00PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) UTAH JAZZ VS LOS ANGELES LAKERS  (10/25/2019 10.30PM EST)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 

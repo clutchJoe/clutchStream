@@ -1,35 +1,7 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.24/21:45)
+#EXTINF:-1, Latest update (10.25/18:53)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Denver Nuggets vs Portland Trail Blazers  (23/10/2019 10:00 PM)
-http://stream724.xyz/hls/NBA11.m3u8
-
-#EXTINF:-1, Sacramento Kings vs Phoenix Suns  (23/10/2019 10:00 PM)
-http://stream724.xyz/hls/NBA10.m3u8
-
-#EXTINF:-1, Oklahoma City Thunder vs Utah Jazz  (23/10/2019 9:00 PM)
-http://stream724.xyz/hls/NBA9.m3u8
-
-#EXTINF:-1, New York Knicks vs San Antonio Spurs  (23/10/2019 8:30 PM)
-http://stream724.xyz/hls/NBA8.m3u8
-
-#EXTINF:-1, Washington Wizards vs Dallas Mavericks  (23/10/2019 8:30 PM)
-http://stream724.xyz/hls/NBA7.m3u8
-
-#EXTINF:-1, Boston Celtics vs Philadelphia 76ers  (23/10/2019 7:30 PM)
-http://stream724.xyz/hls/NBA6.m3u8
-
-#EXTINF:-1, Memphis Grizzlies vs Miami Heat  (23/10/2019 7:30 PM)
-http://stream724.xyz/hls/NBA5.m3u8
-
-#EXTINF:-1, Minnesota Timberwolves vs Brooklyn Nets  (23/10/2019 7:30 PM)
-http://stream724.xyz/hls/NBA4.m3u8
-
-#EXTINF:-1, Cleveland Cavaliers vs Orlando Magic  (23/10/2019 7:00 PM)
-http://stream724.xyz/hls/NBA2.m3u8
-
-#EXTINF:-1, Detroit Pistons vs Indiana Pacers  (23/10/2019 7:00 PM)
-http://stream724.xyz/hls/NBA3.m3u8
-
+#EXTINF:-1, No Signal
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8

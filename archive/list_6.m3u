@@ -1,38 +1,11 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.24/21:45)
+#EXTINF:-1, Latest update (10.25/18:53)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Sacramento Kings vs Phoenix Suns  (10.24)
-http://live.livesport247.live/live/Sacramento/playlist.m3u8
+#EXTINF:-1, Los Angeles Clippers vs Golden State Warriors  (10.25)
+http://live.livesport247.live/live/los/playlist.m3u8
 
-#EXTINF:-1, Denver Nuggets vs Portland Trail Blazers  (10.24)
-http://live.livesport247.live/live/Denver/playlist.m3u8
-
-#EXTINF:-1, Oklahoma City Thunder vs Utah Jazz  (10.24)
-http://live.livesport247.live/live/ok/playlist.m3u8
-
-#EXTINF:-1, Washington Wizards vs Dallas Mavericks  (10.24)
-http://live.livesport247.live/live/Washington/playlist.m3u8
-
-#EXTINF:-1, New York Knicks vs San Antonio Spurs  (10.24)
-http://live.livesport247.live/live/new/playlist.m3u8
-
-#EXTINF:-1, Boston Celtics vs Philadelphia 76ers  (10.24)
-http://live.livesport247.live/live/Boston/playlist.m3u8
-
-#EXTINF:-1, Minnesota Timberwolves vs Brooklyn Nets  (10.24)
-http://live.livesport247.live/live/minnesota/playlist.m3u8
-
-#EXTINF:-1, Memphis Grizzlies vs Miami Heat  (10.24)
-http://live.livesport247.live/live/Memphis/playlist.m3u8
-
-#EXTINF:-1, Cleveland Cavaliers vs Orlando Magic  (10.24)
-http://live.livesport247.live/live/Cleveland/playlist.m3u8
-
-#EXTINF:-1, Chicago Bulls vs Charlotte Hornets  (10.24)
-http://live.livesport247.live/live/Chicago/playlist.m3u8
-
-#EXTINF:-1, Detroit Pistons vs Indiana Pacers  (10.24)
-http://live.livesport247.live/live/Detroit/playlist.m3u8
+#EXTINF:-1, Milwaukee Bucks vs Houston Rockets  (10.25)
+http://live.livesport247.live/live/Milwaukee/playlist.m3u8
 

@@ -1,7 +1,14 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.24/21:45)
+#EXTINF:-1, Latest update (10.25/18:53)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, No Signal
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Detroit Pistons vs Atlanta Hawks  (October 25  2019 - 10:18 PM)
+http://mvp.watchaseries.xyz/hls/hawks/playlist.m3u8
+
+#EXTINF:-1, Golden State Warriors vs Los Angeles Clippers  (October 25  2019 - 3:39 PM)
+http://mvp.watchaseries.xyz/hls/tnt-rip/playlist.m3u8
+
+#EXTINF:-1, Milwaukee Bucks vs Houston Rockets  (October 25  2019 - 10:23 PM)
+http://mvp.watchaseries.xyz/hls/tnt-rip/playlist.m3u8
+
