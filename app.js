@@ -7,17 +7,18 @@ const fetchData = require("./crawlAllPages");
 
 const rule = new schedule.RecurrenceRule();
 rule.second = 0;
-rule.minute = [25, 55];
+rule.minute = [51, 55];
 
 let source = [
     { head: "Updating..." }
 ];
+let json = {};
 
 app.get("/live", (req, res) => {
     if (source[0].head === "Updating...") {
         res.send([{ head: "Updating..." }]).end();
     } else {
-        res.send(source).end();
+        res.send(json).end();
     }
 });
 // app.get("/live_1", (req, res) => {
@@ -51,6 +52,9 @@ app.get("/archive/all.list", (req, res) => {
 
 schedule.scheduleJob(rule, async () => {
     source = await fetchData();
+    for (let i = 0; i < source.length; i++) {
+        json[`site_${i + 1}`] = source[i]
+    }
 });
 
 app.get('/archive/:name', function (req, res, next) {
