@@ -7,7 +7,7 @@ const fetchData = require("./crawlAllPages");
 
 const rule = new schedule.RecurrenceRule();
 rule.second = 0;
-rule.minute = [25, 55];
+rule.minute = [2, 55];
 
 let source = [
     { head: "Updating..." }
@@ -19,6 +19,13 @@ app.get("/live", (req, res) => {
         res.send([{ head: "Updating..." }]).end();
     } else {
         res.send(json).end();
+    }
+});
+app.get("/live_", (req, res) => {
+    if (source[0].head === "Updating...") {
+        res.send([{ head: "Updating..." }]).end();
+    } else {
+        res.send(source).end();
     }
 });
 // app.get("/live_1", (req, res) => {
