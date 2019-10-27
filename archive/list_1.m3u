@@ -1,32 +1,20 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.25/18:53)
+#EXTINF:-1, Latest update (10.27/17:5)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Toronto Raptors vs Boston Celtics  (October 25th  2019 - 7:00 PM ET)
-http:///show/atl/playlist.m3u8
+#EXTINF:-1, Golden State Warriors vs Oklahoma City Thunder  (October 27th  2019 - 3:30 PM ET)
+http://the.maverickz.xyz/show/tnt/playlist.m3u8
 
-#EXTINF:-1, Minnesota Timberwolves vs Charlotte Hornets  (October 25th  2019 - 7:00 PM ET)
-http:///show/tnt/playlist.m3u8
+#EXTINF:-1, Brooklyn Nets vs Memphis Grizzlies  (October 27th  2019 - 6:00 PM ET)
+http://the.maverickz.xyz/show/bkn/playlist.m3u8
 
-#EXTINF:-1, New York Knicks vs Brooklyn Nets  (October 25th  2019 - 7:30 PM ET)
-http:///show/tnt/playlist.m3u8
+#EXTINF:-1, Portland Trail Blazers vs Dallas Mavericks  (October 27th  2019 - 7:00 PM ET)
+http://the.maverickz.xyz/show/dal/playlist.m3u8
 
-#EXTINF:-1, Chicago Bulls vs Memphis Grizzlies  (October 25th  2019 - 8:00 PM ET)
-http:///show/bkn/playlist.m3u8
+#EXTINF:-1, Miami Heat vs Minnesota Timberwolves  (October 27th  2019 - 7:00 PM ET)
+http://the.maverickz.xyz/show/mia/playlist.m3u8
 
-#EXTINF:-1, Dallas Mavericks vs New Orleans Pelicans  (October 25th  2019 - 8:00 PM ET)
-http:///show/mia/playlist.m3u8
-
-#EXTINF:-1, Washington Wizards vs Oklahoma City Thunder  (October 25th  2019 - 8:00 PM ET)
-http://zubacz.xyz/neinz/video/espn/d0695f6fa2f143eb95c7a41d96d581c4.m3u8
-
-#EXTINF:-1, Phoenix Suns vs Denver Nuggets  (October 25th  2019 - 9:00 PM ET)
-http:///show/dal/playlist.m3u8
-
-#EXTINF:-1, Portland Trail Blazers vs Sacramento Kings  (October 25th  2019 - 10:00 PM ET)
-http:///show/nyk/playlist.m3u8
-
-#EXTINF:-1, Utah Jazz vs Los Angeles Lakers  (October 25th  2019 - 10:30 PM ET)
-http:///show/tnt/playlist.m3u8
+#EXTINF:-1, Charlotte Hornets vs Los Angeles Lakers  (October 27th  2019 - 9:30 PM ET)
+http://the.maverickz.xyz/show/lal/playlist.m3u8
 
