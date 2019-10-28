@@ -7,7 +7,7 @@ const fetchData = require("./crawlAllPages");
 
 const rule = new schedule.RecurrenceRule();
 rule.second = 0;
-rule.minute = [2, 55];
+rule.minute = [25, 55];
 
 let source = [
     { head: "Updating..." }
