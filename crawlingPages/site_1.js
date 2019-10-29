@@ -39,14 +39,23 @@ module.exports = async (page) => {
             }
             // const phpLink = await page.$$eval("iframe", iframes => iframes.filter(iframe => iframe.src.endsWith(".php"))[0].src);
             await page.goto(phpLink, { waitUntil: "networkidle2" });
-            const sourceLink = await page.$eval(
-                "body script",
-                el =>
-                    el.innerText
-                        .trim()
-                        .split('source: "')[1]
-                        .split('",')[0]
-            );
+            let sourceLink = "";
+            try {
+                sourceLink = await page.$eval(
+                    "body script",
+                    el =>
+                        el.innerText
+                            .trim()
+                            .split('source: "')[1]
+                            .split('",')[0]
+                );
+            } catch (err) {
+                console.error("something wrong...");
+                item.head = "(Wrong) "  + item.head;
+                item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+                continue;
+            }
+            
             if(sourceLink == ""){
                 item.head = "(No Signal) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
