@@ -27,21 +27,24 @@ module.exports = async (page) => {
     	for (let item of data) {
 	        await page.goto(item.link, { waitUntil: "networkidle2" });
             // await page.frames();
-	        const sourceLink = await page.$$eval("body script", el => {
-                // if(el.every(i => i.textContent==="")){
-                //     return false;
-                // } else {
-                //     const tar = el.filter(script => script.textContent.trim().startsWith("window.onload = function"));
-                //     return tar[0].textContent.split(",")[0].split("'")[1];
-                // }
-                const tar = el.filter(script => script.textContent.trim().startsWith("window.onload = function"));
-                if (tar == false) {
-                    return false;
-                } else {
-                    return tar[0].textContent.split(",")[0].split("'")[1];
-                }
-            });
-            if(sourceLink){
+	        let sourceLink = "";
+            try {
+                sourceLink = await page.$$eval("body script", el => {
+                    const tar = el.filter(script => script.textContent.trim().startsWith("window.onload = function"));
+                    if (tar == false) {
+                        return false;
+                    } else {
+                        return tar[0].textContent.split(",")[0].split("'")[1];
+                    }
+                });
+            } catch (err) {
+                console.error("something wrong...");
+                item.head = "(Wrong) "  + item.head;
+                item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+                continue;
+            }
+            
+            if(sourceLink != ""){
                 item.link = sourceLink;
             } else {
                 item.head = "(No Signal) "  + item.head;

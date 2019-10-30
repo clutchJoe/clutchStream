@@ -1,20 +1,38 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.27/17:5)
+#EXTINF:-1, Latest update (10.30/23:29)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) OKLAHOMA CITY THUNDER VS GOLDEN STATE WARRIORS  (10/27/2019 03.30PM EST)
+#EXTINF:-1, (No Signal) CLEVELAND CAVALIERS VS CHICAGO BULLS  (10/30/2019 07.00PM EST)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) MEMPHIS GRIZZLIES VS BROOKLYN NETS  (10/27/2019 06.00PM EST)
+#EXTINF:-1, (No Signal) ORLANDO MAGIC VS NEW YORK KNICKS  (10/30/2019 07.00PM EST)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) MINNESOTA TIMBERWOLVES VS MIAMI HEAT  (10/27/2019 07.00PM EST)
+#EXTINF:-1, (No Signal) PHILADELPHIA 76ERS VS MINNESOTA TIMBERWOLVES  (10/30/2019 07.00PM EST)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) DALLAS MAVERICKS VS PORTLAND TRAIL BLAZERS  (10/27/2019 07.00PM EST)
+#EXTINF:-1, (No Signal) BROOKLYN NETS VS INDIANA PACERS  (10/30/2019 07.30PM EST)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) LOS ANGELES LAKERS VS CHARLOTTE HORNETS  (10/27/2019 09.30PM EST)
+#EXTINF:-1, (No Signal) BOSTON CELTICS VS MILWAUKEE BUCKS  (10/30/2019 07.30PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) TORONTO RAPTORS VS DETROPIT PISTONS  (10/30/2019 07.30PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) OKLAHOMA CITY THUNDER VS PORTLAND TRAIL BLAZERS  (10/30/2019 08.00PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) WASHINGTON WIZARDS VS HOUSTON ROCKETS  (10/30/2019 08.00PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) SACRAMENTO KINGS VS CHARLOTTE HORNETS  (10/30/2019 10.00PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) UTAH JAZZ VS LOS ANGELES CLIPPERS  (10/30/2019 10.00PM EST)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) GOLDEN STATE WARRIORS VS PHOENIX SUNS  (10/30/2019 10.30PM EST)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 

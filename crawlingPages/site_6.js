@@ -26,11 +26,20 @@ module.exports = async (page) => {
     if(!(data == false)){
         for (let item of data) {
             await page.goto(item.link, { waitUntil: "networkidle2" });
-            const sourceLink = await page.evaluate(() => {
-                const divs = Array.from(document.querySelectorAll("body script"));
-                const tar = divs.findIndex(i => i.src==="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js");
-                return divs[tar + 1].innerText.trim().split('source:')[1].split('"')[1]
-            })
+            let sourceLink = "";
+            try {
+                sourceLink = await page.evaluate(() => {
+                    const divs = Array.from(document.querySelectorAll("body script"));
+                    const tar = divs.findIndex(i => i.src==="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js");
+                    return divs[tar + 1].innerText.trim().split('source:')[1].split('"')[1]
+                });
+            } catch (err) {
+                console.error("something wrong...");
+                item.head = "(Wrong) "  + item.head;
+                item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+                continue;
+            }
+            
             if(sourceLink == ""){
                 item.head = "(No Signal) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";

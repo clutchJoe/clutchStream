@@ -1,20 +1,38 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.27/17:5)
+#EXTINF:-1, Latest update (10.30/23:29)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Golden State Warriors vs Oklahoma City Thunder  (October 27th  2019 - 3:30 PM ET)
-http://the.maverickz.xyz/show/tnt/playlist.m3u8
+#EXTINF:-1, Chicago Bulls vs Cleveland Cavaliers  (October 30th  2019 - 7:00 PM ET)
+http:///show/mia/playlist.m3u8
 
-#EXTINF:-1, Brooklyn Nets vs Memphis Grizzlies  (October 27th  2019 - 6:00 PM ET)
-http://the.maverickz.xyz/show/bkn/playlist.m3u8
+#EXTINF:-1, New York Knicks vs Orlando Magic  (October 30th  2019 - 7:00 PM ET)
+http:///show/dal/playlist.m3u8
 
-#EXTINF:-1, Portland Trail Blazers vs Dallas Mavericks  (October 27th  2019 - 7:00 PM ET)
-http://the.maverickz.xyz/show/dal/playlist.m3u8
+#EXTINF:-1, Minnesota Timberwolves vs Philadelphia 76ers  (October 30th  2019 - 7:00 PM ET)
+http:///show/lal/playlist.m3u8
 
-#EXTINF:-1, Miami Heat vs Minnesota Timberwolves  (October 27th  2019 - 7:00 PM ET)
-http://the.maverickz.xyz/show/mia/playlist.m3u8
+#EXTINF:-1, Milwaukee Bucks vs Boston Celtics  (October 30th  2019 - 7:30 PM ET)
+http:///show/tor/playlist.m3u8
 
-#EXTINF:-1, Charlotte Hornets vs Los Angeles Lakers  (October 27th  2019 - 9:30 PM ET)
-http://the.maverickz.xyz/show/lal/playlist.m3u8
+#EXTINF:-1, Indiana Pacers vs Brooklyn Nets  (October 30th  2019 - 7:30 PM ET)
+http:///show/hou/playlist.m3u8
+
+#EXTINF:-1, Detroit Pistons vs Toronto Raptors  (October 30th  2019 - 7:30 PM ET)
+http:///show/mil/playlist.m3u8
+
+#EXTINF:-1, Houston Rockets vs Washington Wizards  (October 30th  2019 - 8:00 PM ET)
+http:///show/nop/playlist.m3u8
+
+#EXTINF:-1, Portland Trail Blazers vs Oklahoma City Thunder  (October 30th  2019 - 8:00 PM ET)
+http:///show/sas/playlist.m3u8
+
+#EXTINF:-1, LA Clippers vs Utah Jazz  (October 30th  2019 - 10:00 PM ET)
+http:///show/uta/playlist.m3u8
+
+#EXTINF:-1, Charlotte Hornets vs Sacramento Kings  (October 30th  2019 - 10:00 PM ET)
+http:///show/den/playlist.m3u8
+
+#EXTINF:-1, Phoenix Suns vs Golden State Warriors  (October 30th  2019 - 10:30 PM ET)
+http:///show/lac/playlist.m3u8
 

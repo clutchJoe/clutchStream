@@ -1,35 +1,38 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.27/17:5)
+#EXTINF:-1, Latest update (10.30/23:29)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Miami Heat vs Milwaukee Bucks  (09 Oct 2019)
+#EXTINF:-1, (No Signal) Chicago Bulls vs Cleveland Cavaliers  (09 Oct 2019)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Philadelphia 76ers at Detroit Pistons  (15 Oct 2019)
+#EXTINF:-1, (No Signal) New York Knicks vs Orlando Magic  (22 Oct 2019)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Orlando Magic vs Atlanta Hawks  (09 Oct 2019)
+#EXTINF:-1, (No Signal) Philadelphia 76ers vs Atlanta Hawks  (15 Oct 2019)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Boston Celtics vs New York Knicks  (15 Oct 2019)
+#EXTINF:-1, (No Signal) Milwaukee Bucks vs Boston Celtics  (15 Oct 2019)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Indiana Pacers vs Cleveland Cavaliers  (09 Oct 2019)
+#EXTINF:-1, (No Signal) Indiana Pacers vs Brooklyn Nets  (09 Oct 2019)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Toronto Raptors vs Chicago Bulls  (22 Oct 2019)
+#EXTINF:-1, (No Signal) Detroit Pistons vs Toronto Raptors  (22 Oct 2019)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) New Orleans Pelicans vs Houston Rockets  (11 Oct 2019)
+#EXTINF:-1, (No Signal) Oklahoma City Thunder vs Houston Rockets  (22 Oct 2019)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Washington Wizards vs San Antonio Spurs  (09 Oct 2019)
+#EXTINF:-1, (No Signal) Portland Trail Blazers vs Oklahoma City Thunder  (09 Oct 2019)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Sacramento Kings vs Utah Jazz  (09 Oct 2019)
+#EXTINF:-1, (No Signal) Los Angeles Clippers vs Utah Jazz  (10 Oct 2019)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Los Angeles Clippers vs Phoenix Suns  (10 Oct 2019)
+#EXTINF:-1, (No Signal) Charlotte Hornets vs Sacramento Kings  (09 Oct 2019)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) Golden State Warriors vs New Orleans Pelicans  (10 Oct 2019)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 

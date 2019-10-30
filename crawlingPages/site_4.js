@@ -46,13 +46,22 @@ module.exports = async (page) => {
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
             } else {
                 await page.goto(tar.phpLink, { waitUntil: "networkidle2" });
-                const sourceLink = await page.$$eval(
-                    "body script",
-                    els =>
-                        els.filter(i => i.textContent.trim().startsWith("var playerElement"))[0].innerText
-                            .split("source:'")[1]
-                            .split("'")[0]
-                );
+                let sourceLink = "";
+                try {
+                    sourceLink = await page.$$eval(
+                        "body script",
+                        els =>
+                            els.filter(i => i.textContent.trim().startsWith("var playerElement"))[0].innerText
+                                .split("source:'")[1]
+                                .split("'")[0]
+                    );
+                } catch (err) {
+                    console.error("something wrong...");
+                    item.head = "(Wrong) "  + item.head;
+                    item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+                    continue;
+                }
+                
                 if(sourceLink == ""){
                     item.head = "(No Signal) "  + item.head;
                     item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";

@@ -59,14 +59,23 @@ const puppeteer = require("puppeteer");
                 continue;
             }
             await page.goto(phpLink, { waitUntil: "networkidle2" });
-            const sourceLink = await page.$eval(
-                "body script",
-                el =>
-                    el.innerText
-                        .trim()
-                        .split("atob('")[1]
-                        .split("'")[0]
-            );
+            let sourceLink = "";
+            try {
+                sourceLink = await page.$eval(
+                    "body script",
+                    el =>
+                        el.innerText
+                            .trim()
+                            .split("atob('")[1]
+                            .split("'")[0]
+                );
+            } catch (err) {
+                console.error("something wrong...");
+                item.head = "(Wrong) "  + item.head;
+                item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+                continue;
+            }
+            
             if(sourceLink == ""){
                 item.head = "(No Signal) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
