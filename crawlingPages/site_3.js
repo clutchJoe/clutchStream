@@ -6,36 +6,52 @@ module.exports = async (page) => {
     // const page = await bowser.newPage();
     await page.goto(process.env.SITE_3, { waitUntil: "networkidle2" });
     const data = await page.evaluate(() => {
+        // const tar = Array.from(document.querySelectorAll("div.mec-has-event")).reverse()[0];
+        // tar.click();
+        const id = Array.from(document.querySelectorAll("div.mec-has-event")).reverse()[0].id.split('day')[1];
         let lists = [];
-        const items = Array.from(document.querySelectorAll("a.w-full.rounded"));
+        const items = Array.from(document.querySelector(`#mec_daily_view_date_events${id}`).children);
+        // 判断是否为空数组
         if(items == false){
             return items;
         } else {
-            for(let item of items){
+            for (let item of items) {
                 let data = {};
-                data.head = item.children[0].children[1].children[0].innerText;
-                data.updateTime = item.children[0].children[1].children[1].innerText;
-                data.link = item.getAttribute("href");
+                if (item.childElementCount == 3) {
+                    data.head = item.children[2].children[0].innerText;
+                    data.updateTime = item.children[1].innerText.trim();
+                    data.link = item.children[2].children[0].href;
+                } else {
+                    data.head = item.children[1].children[0].innerText;
+                    data.updateTime = `${new Date().getMonth() + 1}.${new Date().getDate()}`;
+                    data.link = item.children[1].children[0].href;
+                }
                 lists.push(data);
             }
+            return lists;
         }
-        
-        return lists;
     });
 
     if(!(data == false)){
-    	for (let item of data) {
-	        await page.goto(item.link, { waitUntil: "networkidle2" });
-            // await page.frames();
-	        let sourceLink = "";
+        for (let item of data) {
+            await page.goto(item.link, { waitUntil: "networkidle2" });
+            let sourceLink = "";
             try {
-                sourceLink = await page.$$eval("body script", el => {
-                    const tar = el.filter(script => script.textContent.trim().startsWith("window.onload = function"));
-                    if (tar == false) {
-                        return false;
-                    } else {
-                        return tar[0].textContent.split(",")[0].split("'")[1];
-                    }
+                sourceLink = await page.$$eval(
+                    "body script",
+                    els => {
+                        const start = els.filter(script => script.textContent.trim().startsWith("var player = new Clappr.Player"));
+                        if (start != false) {
+                            return start[0].textContent
+                                .trim()
+                                .split("source:")[1]
+                                .split('"')[1]
+                        } else {
+                            return els.filter(script => script.textContent.trim().startsWith("var playerElement = "))[0].textContent
+                                .trim()
+                                .split("source: '")[1]
+                                .split("',")[0]
+                        }
                 });
             } catch (err) {
                 console.error("something wrong...");
@@ -44,14 +60,15 @@ module.exports = async (page) => {
                 continue;
             }
             
-            if(sourceLink != ""){
-                item.link = sourceLink;
-            } else {
+            if(sourceLink == ""){
                 item.head = "(No Signal) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+            }else{
+                item.link = sourceLink;
             }
-	    }
+        }
     }
+
     // console.log(data);
     return data;
     // await bowser.close();
