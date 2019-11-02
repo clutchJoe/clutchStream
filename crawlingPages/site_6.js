@@ -30,8 +30,10 @@ module.exports = async (page) => {
             try {
                 sourceLink = await page.evaluate(() => {
                     const divs = Array.from(document.querySelectorAll("body script"));
-                    const tar = divs.findIndex(i => i.src==="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js");
-                    return divs[tar + 1].innerText.trim().split('source:')[1].split('"')[1]
+                    // const tar = divs.findIndex(i => i.src==="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js");
+                    // return divs[tar + 1].innerText.trim().split('source:')[1].split('"')[1];
+                    const tar = divs.filter(i => i.innerText.trim().startsWith('var currentTime'));
+                    return tar[0].innerText.trim().split('source:')[1].split('"')[1];
                 });
             } catch (err) {
                 console.error("something wrong...");

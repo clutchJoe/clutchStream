@@ -52,7 +52,7 @@ module.exports = async (page) => {
                         "body script",
                         els =>
                             els.filter(i => i.textContent.trim().startsWith("var playerElement"))[0].innerText
-                                .split("source:'")[1]
+                                .split("source: '")[1]
                                 .split("'")[0]
                     );
                 } catch (err) {
