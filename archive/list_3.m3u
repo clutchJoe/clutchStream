@@ -1,8 +1,56 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.30/23:29)
+#EXTINF:-1, Latest update (11.2/23:34)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) NBA Live Stream  (October 30  2019 - 2:08 AM)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, ASTON VILLA VS LIVERPOOL SS3 H3  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H3/playlist.m3u8
+
+#EXTINF:-1, BRIGHTON & HOVE ALBION VS NORWICH CITY -H2  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H2/playlist.m3u8
+
+#EXTINF:-1, MANCHESTER CITY VS SOUTHAMPTON – S1  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/abr/abr-S-1/playlist.m3u8
+
+#EXTINF:-1, SHEFFIELD UNITED VS BURNLEY -H1  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H1/playlist.m3u8
+
+#EXTINF:-1, WEST HAM UNITED VS NEWCASTLE UNITED SS11 H4  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H4/playlist.m3u8
+
+#EXTINF:-1, AFC BOURNEMOUTH VS MANCHESTER UNITED -S1  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/abr/abr-S-1/playlist.m3u8
+
+#EXTINF:-1, WATFORD VS CHELSEA – S1  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/abr/abr-S-1/playlist.m3u8
+
+#EXTINF:-1, ROMA VS NAPOLI P3  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/abr/abr-S-5/playlist.m3u8
+
+#EXTINF:-1, SEVILLA VS ATLÉTICO MADRID P2  (08:00 AM - 06:00 PM | CET)
+https://hls393422.r-cdn.com/trn_61809/1559/playlist.m3u8
+
+#EXTINF:-1, ESPANYOL VS VALENCIA P2  (08:00 AM - 06:00 PM | CET)
+https://hls393422.r-cdn.com/trn_61809/1559/playlist.m3u8
+
+#EXTINF:-1, LEVANTE VS BARCELONA – P2  (08:00 AM - 06:00 PM | CET)
+https://hls393422.r-cdn.com/trn_61809/1559/playlist.m3u8
+
+#EXTINF:-1, BORUSSIA DORTMUND VS WOLFSBURG FS2 P5  (08:00 AM - 06:00 PM | CET)
+https://hls393422.r-cdn.com/trn_61806/1558/playlist.m3u8
+
+#EXTINF:-1, BOLOGNA VS INTERNAZIONALE SS9 P7  (08:00 AM - 06:00 PM | CET)
+https://hls393422.r-cdn.com/trn_61809/1556/playlist.m3u8
+
+#EXTINF:-1, EINTRACHT FRANKFURT VS BAYERN MÜNCHEN FS1 P6  (08:00 AM - 06:00 PM | CET)
+https://hls393422.r-cdn.com/trn_61809/1557/playlist.m3u8
+
+#EXTINF:-1, TORINO VS JUVENTUS -P1  (08:00 AM - 06:00 PM | CET)
+https://hls393422.r-cdn.com/trn_61808/1509/playlist.m3u8
+
+#EXTINF:-1, ARSENAL VS WOLVERHAMPTON WANDERERS CNBC S2  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/abr/abr-S-2/playlist.m3u8
+
+#EXTINF:-1, REAL MADRID VS REAL BETIS – P2  (08:00 AM - 06:00 PM | CET)
+https://hls393422.r-cdn.com/trn_61809/1559/playlist.m3u8
 

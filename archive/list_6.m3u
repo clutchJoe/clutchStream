@@ -1,38 +1,29 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (10.30/23:29)
+#EXTINF:-1, Latest update (11.2/23:34)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Phoenix Suns vs Golden State Warriors  (10.30)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, San Antonio Spurs vs Golden State Warriors  (11.2)
+http://live.livesport247.live/live/San/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Charlotte Hornets vs Sacramento Kings  (10.30)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Utah Jazz vs Sacramento Kings  (11.2)
+http://live.livesport247.live/live/Utah/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Los Angeles Clippers vs Utah Jazz  (10.30)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Los Angeles Lakers vs Dallas Mavericks  (11.2)
+http://live.livesport247.live/live/Lakers/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Portland Trail Blazers vs Oklahoma City Thunder  (10.30)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Detroit Pistons vs Chicago Bulls  (11.2)
+http://live.livesport247.live/live/Detroit/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Houston Rockets vs Washington Wizards  (10.30)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, New York Knicks vs Boston Celtics  (11.2)
+http://live.livesport247.live/live/New/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Milwaukee Bucks vs Boston Celtics  (10.30)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Milwaukee Bucks vs Orlando Magic  (11.2)
+http://live.livesport247.live/live/Milwaukee/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Indiana Pacers vs Brooklyn Nets  (10.30)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Houston Rockets vs Brooklyn Nets  (11.2)
+http://live.livesport247.live/live/Houston/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Detroit Pistons vs Toronto Raptors  (10.30)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) Chicago Bulls vs Cleveland Cavaliers  (10.30)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) Minnesota Timberwolves vs Philadelphia 76ers  (10.30)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) New York Knicks vs Orlando Magic  (10.30)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Cleveland Cavaliers vs Indiana Pacers  (11.2)
+http://live.livesport247.live/live/Cleveland/playlist.m3u8
 
