@@ -9,7 +9,7 @@ module.exports = async (page) => {
     const data = await page.evaluate(() => {
         // const tar = Array.from(document.querySelectorAll("div.mec-has-event")).reverse()[0];
         // tar.click();
-        const id = Array.from(document.querySelectorAll("div.mec-has-event")).reverse()[0].id.split('day')[1];
+        const id = Array.from(document.querySelectorAll("div.mec-has-event"))[0].id.split('day')[1];
         let lists = [];
         const items = Array.from(document.querySelector(`#mec_daily_view_date_events${id}`).children);
         // 判断是否为空数组
@@ -18,9 +18,15 @@ module.exports = async (page) => {
         } else {
             for (let item of items) {
                 let data = {};
-                data.head = item.children[2].children[0].innerText;
-                data.updateTime = item.children[1].innerText;
-                data.link = item.children[2].children[0].href;
+                if (item.childElementCount == 3) {
+                    data.head = item.children[2].children[0].innerText;
+                    data.updateTime = item.children[1].innerText.trim();
+                    data.link = item.children[2].children[0].href;
+                } else {
+                    data.head = item.children[1].children[0].innerText;
+                    data.updateTime = `${new Date().getMonth() + 1}.${new Date().getDate()}`;
+                    data.link = item.children[1].children[0].href;
+                }
                 lists.push(data);
             }
             return lists;
