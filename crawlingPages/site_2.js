@@ -9,7 +9,22 @@ module.exports = async (page) => {
     const data = await page.evaluate(() => {
         // const tar = Array.from(document.querySelectorAll("div.mec-has-event")).reverse()[0];
         // tar.click();
-        const id = Array.from(document.querySelectorAll("div.mec-has-event"))[0].id.split('day')[1];
+        function getLocalTime(i) {
+            //参数i为时区值数字，比如北京为东八区则输进8,西5输入-5
+            if (typeof i !== 'number') return;
+            const d = new Date();
+            //得到1970年一月一日到现在的秒数
+            const len = d.getTime();
+            //本地时间与GMT时间的时间偏移差
+            const offset = d.getTimezoneOffset() * 60000;
+            //得到现在的格林尼治时间
+            const utcTime = len + offset;
+            return new Date(utcTime + 3600000 * i);
+        }
+        const day = getLocalTime(-8).getDate();
+        const all = Array.from(document.querySelectorAll("div.mec-daily-view-day"));
+        const id = all.find(i => i.innerText.trim() == day).id.split('day')[1];
+        // const id = Array.from(document.querySelectorAll("div.mec-has-event"))[0].id.split('day')[1];
         let lists = [];
         const items = Array.from(document.querySelector(`#mec_daily_view_date_events${id}`).children);
         // 判断是否为空数组
