@@ -55,8 +55,8 @@ app.get("/archive/all.list", (req, res) => {
 [clutch stream][site 4],${process.env.WEB_4}
 [clutch stream][site 5],${process.env.WEB_5}
 [clutch stream][site 6],${process.env.WEB_6}
-[clutch stream][site 6],${process.env.WEB_7}
-[clutch stream][site 6],${process.env.WEB_8}`).end();
+[clutch stream][site 7],${process.env.WEB_7}
+[clutch stream][site 8],${process.env.WEB_8}`).end();
 });
 
 schedule.scheduleJob(rule, async () => {
