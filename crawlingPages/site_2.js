@@ -56,11 +56,20 @@ module.exports = async (page) => {
             try {
                 sourceLink = await page.$$eval(
                     "body script",
-                    els =>
-                        els.filter(script => script.textContent.trim().startsWith("var playerElement = "))[0].textContent
-                            .trim()
-                            .split("source: '")[1]
-                            .split("',")[0]
+                    els => {
+                        const start = els.filter(script => script.textContent.trim().startsWith("var player = new Clappr.Player"));
+                        if (start != false) {
+                            return start[0].textContent
+                                .trim()
+                                .split("source:")[1]
+                                .split('"')[1]
+                        } else {
+                            return els.filter(script => script.textContent.trim().startsWith("var playerElement = "))[0].textContent
+                                .trim()
+                                .split("source: '")[1]
+                                .split("',")[0]
+                        }
+                    }
                 );
             } catch (err) {
                 console.error("something wrong...");
