@@ -1,29 +1,23 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.2/23:34)
+#EXTINF:-1, Latest update (11.6/21:20)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) Houston Rockets at Brooklyn Nets  (22 Oct 2019)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Indiana Pacers vs Charlotte Hornets  (09 Oct 2019)
+http://1xi.basay.xyz/hls/live.m3u8
 
-#EXTINF:-1, (No Signal) Cleveland Cavaliers vs Indiana Pacers  (09 Oct 2019)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Boston Celtics vs Cleveland Cavaliers  (15 Oct 2019)
+http://1xi.basay.xyz/hls2/live.m3u8
 
-#EXTINF:-1, (No Signal) Milwaukee Bucks vs Orlando Magic  (09 Oct 2019)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, San Antonio Spurs vs Atlanta Hawks  (09 Oct 2019)
+http://1xi.basay.xyz/hls3/live.m3u8
 
-#EXTINF:-1, (No Signal) New York Knicks vs Boston Celtics  (15 Oct 2019)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Los Angeles Lakers vs Chicago Bulls  (22 Oct 2019)
+http://1xi.basay.xyz/hls4/live.m3u8
 
-#EXTINF:-1, (No Signal) Detroit Pistons vs Chicago Bulls  (22 Oct 2019)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Orlando Magic vs Oklahoma City Thunder  (09 Oct 2019)
+http://1xi.basay.xyz/hls5/live.m3u8
 
-#EXTINF:-1, (No Signal) Los Angeles Lakers vs Dallas Mavericks  (22 Oct 2019)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) Utah Jazz vs Sacramento Kings  (09 Oct 2019)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) San Antonio Spurs vs Golden State Warriors  (10 Oct 2019)
+#EXTINF:-1, (No Signal) Miami Heat vs Denver Nuggets  (09 Oct 2019)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 

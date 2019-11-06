@@ -1,29 +1,23 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.2/23:34)
+#EXTINF:-1, Latest update (11.6/21:20)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, San Antonio Spurs vs Golden State Warriors  (11.2)
+#EXTINF:-1, Miami Heat vs Denver Nuggets  (11.6)
+http://live.livesport247.live/live/Miami/playlist.m3u8
+
+#EXTINF:-1, Los Angeles Lakers vs Chicago Bulls  (11.6)
+http://live.livesport247.live/live/Lakers111/playlist.m3u8
+
+#EXTINF:-1, Orlando Magic vs Oklahoma City Thunder  (11.6)
+http://live.livesport247.live/live/Orlando/playlist.m3u8
+
+#EXTINF:-1, San Antonio Spurs vs Atlanta Hawks  (11.6)
 http://live.livesport247.live/live/San/playlist.m3u8
 
-#EXTINF:-1, Utah Jazz vs Sacramento Kings  (11.2)
-http://live.livesport247.live/live/Utah/playlist.m3u8
+#EXTINF:-1, Boston Celtics vs Cleveland Cavaliers  (11.6)
+http://live.livesport247.live/live/Boston/playlist.m3u8
 
-#EXTINF:-1, Los Angeles Lakers vs Dallas Mavericks  (11.2)
-http://live.livesport247.live/live/Lakers/playlist.m3u8
-
-#EXTINF:-1, Detroit Pistons vs Chicago Bulls  (11.2)
-http://live.livesport247.live/live/Detroit/playlist.m3u8
-
-#EXTINF:-1, New York Knicks vs Boston Celtics  (11.2)
-http://live.livesport247.live/live/New/playlist.m3u8
-
-#EXTINF:-1, Milwaukee Bucks vs Orlando Magic  (11.2)
-http://live.livesport247.live/live/Milwaukee/playlist.m3u8
-
-#EXTINF:-1, Houston Rockets vs Brooklyn Nets  (11.2)
-http://live.livesport247.live/live/Houston/playlist.m3u8
-
-#EXTINF:-1, Cleveland Cavaliers vs Indiana Pacers  (11.2)
-http://live.livesport247.live/live/Cleveland/playlist.m3u8
+#EXTINF:-1, Indiana Pacers vs Charlotte Hornets  (11.6)
+http://live.livesport247.live/live/Indiana/playlist.m3u8
 

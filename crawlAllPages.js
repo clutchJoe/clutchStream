@@ -6,6 +6,8 @@ const site_3 = require("./crawlingPages/site_3");
 const site_4 = require("./crawlingPages/site_4");
 const site_5 = require("./crawlingPages/site_5");
 const site_6 = require("./crawlingPages/site_6");
+const site_7 = require("./crawlingPages/site_7");
+const site_8 = require("./crawlingPages/site_8");
 const writeM3u = require("./writeFile/m3u");
 const writeConf = require("./writeFile/conf");
 
@@ -44,7 +46,9 @@ module.exports = async () => {
         ${process.env.SITE_3}
         ${process.env.SITE_4}
         ${process.env.SITE_5}
-        ${process.env.SITE_6}`
+        ${process.env.SITE_6}
+        ${process.env.SITE_7}
+        ${process.env.SITE_8}`
     );
     try {
         const p1 = await site_1(page);
@@ -88,6 +92,20 @@ module.exports = async () => {
         data.push([]);
         console.error(`Site_6 crawling has some error...`);
     }
+    try {
+        const p7 = await site_7(page);
+        data.push(p7);
+    } catch (err){
+        data.push([]);
+        console.error(`Site_7 crawling has some error...`);
+    }
+    try {
+        const p8 = await site_8(page);
+        data.push(p8);
+    } catch (err){
+        data.push([]);
+        console.error(`Site_8 crawling has some error...`);
+    }
     await bowser.close();
     console.log(`\nEnd of crawl...`);
     writeM3u(data[0], "list_1.m3u");
@@ -96,6 +114,8 @@ module.exports = async () => {
     writeM3u(data[3], "list_4.m3u");
     writeM3u(data[4], "list_5.m3u");
     writeM3u(data[5], "list_6.m3u");
+    writeM3u(data[6], "list_7.m3u");
+    writeM3u(data[7], "list_8.m3u");
     writeConf(data);
     console.log(new Date());
     return await data;
