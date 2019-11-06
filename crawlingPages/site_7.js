@@ -1,73 +1,58 @@
 require("dotenv").config({ path: "../.env" });
-const puppeteer = require("puppeteer");
+// const puppeteer = require("puppeteer");
 
-(async () => {
-    const bowser = await puppeteer.launch({ headless: false }); // { headless: false },{ args: ['--no-sandbox'] }
-    const page = await bowser.newPage();
-    await page.goto("http://www.volokit.com/all-games/schedule/nba.php", { waitUntil: "networkidle2" });
-
-    const data = await page.evaluate(() => {
-        let lists = [];
-        const items = Array.from(document.querySelectorAll("tr"));
-        // 判断是否为空数组
-        if(items == false){
-            return items;
-        } else {
-            for (let i = 1; i < items.length; i++) {
-                let data = {};
-                data.head = items[i].children[1].children[3].innerText;
-                data.updateTime = items[i].children[0].children[0].innerText;
-                data.link = items[i].children[1].children[3].href;
-                lists.push(data);
+module.exports = async (page) => {
+    // const bowser = await puppeteer.launch({ headless: false }); // { headless: false },{ args: ['--no-sandbox'] }
+    // const page = await bowser.newPage();
+    const temp = [];
+    for (i = 0; i < 3; i++) {
+        await page.goto(`${process.env.SITE_7}page/${i + 1}/`, { waitUntil: "networkidle2" });
+        const list = await page.evaluate(() => {
+            let lists = [];
+            const items = Array.from(document.querySelectorAll("div.post-content"));
+            // 判断是否为空数组
+            if(items == false){
+                return items;
+            } else {
+                for (let item of items) {
+                    let data = {};
+                    data.head = item.children[1].children[0].innerText.trim();
+                    data.updateTime = item.children[2].innerText.trim();
+                    data.link = item.children[1].children[0].href;
+                    lists.push(data);
+                }
+                return lists;
             }
-            return lists;
-        }
-    });
+        });
+        temp.push(...list);
+    }
+    function getLocalTime(i) {
+        //参数i为时区值数字，比如北京为东八区则输进8,西5输入-5
+        if (typeof i !== 'number') return;
+        const d = new Date();
+        //得到1970年一月一日到现在的秒数
+        const len = d.getTime();
+        //本地时间与GMT时间的时间偏移差
+        const offset = d.getTimezoneOffset() * 60000;
+        //得到现在的格林尼治时间
+        const utcTime = len + offset;
+        return new Date(utcTime + 3600000 * i);
+    }
+    const day = getLocalTime(-8).getDate();
+    let data = temp.filter(i => i.updateTime.split(" ")[1].split(",")[0] == day);
+    if (data == false) data = temp.filter(i => i.updateTime.split(" ")[1].split(",")[0] == day-1);
 
     if(!(data == false)){
         for (let item of data) {
             await page.goto(item.link, { waitUntil: "networkidle2" });
-            await page.frames();
-            let phpLink = "";
-            try {
-                phpLink = await page.$eval("#volokit-feed", iframes => iframes.src);
-                if (!phpLink.endsWith(".php")) {
-                    console.error("No php link...1");
-                    item.head = "(No Signal) "  + item.head;
-                    item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
-                    continue;
-                } else {
-                    try {
-                        await page.goto(phpLink, { waitUntil: "networkidle2" });
-                        phpLink = await page.$eval("#volokit-feed", iframes => iframes.src);
-                        if (!phpLink.endsWith(".php")) {
-                            item.head = "(No Signal) "  + item.head;
-                            item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
-                            continue;
-                        }
-                    } catch {
-                        console.error("No php link...");
-                        item.head = "(No Signal) "  + item.head;
-                        item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
-                        continue;
-                    }
-                }
-            } catch (err) {
-                console.error("No php link...");
-                item.head = "(No Signal) "  + item.head;
-                item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
-                continue;
-            }
-            await page.goto(phpLink, { waitUntil: "networkidle2" });
             let sourceLink = "";
             try {
-                sourceLink = await page.$eval(
+                sourceLink = await page.$$eval(
                     "body script",
-                    el =>
-                        el.innerText
-                            .trim()
-                            .split("atob('")[1]
-                            .split("'")[0]
+                    els =>
+                        els.find(i => i.innerText.indexOf('player = new Clappr.Player') != -1).innerText
+                            .split("source:")[1]
+                            .split('"')[1]
                 );
             } catch (err) {
                 console.error("something wrong...");
@@ -80,12 +65,12 @@ const puppeteer = require("puppeteer");
                 item.head = "(No Signal) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
             }else{
-                item.link = Buffer.from(sourceLink, 'base64').toString();
+                item.link = sourceLink;
             }
         }
     }
 
-    console.log(data);
-    // return data;
-    await bowser.close();
-})();
+    // console.log(data);
+    return data;
+    // await bowser.close();
+};
