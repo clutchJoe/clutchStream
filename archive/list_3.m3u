@@ -1,41 +1,53 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.6/21:20)
+#EXTINF:-1, Latest update (11.7/20:10)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Barcelona vs Slavia Praha -s1  (08:00 AM - 06:00 PM | CET)
-https://hls393422.r-cdn.com/trn_61808/1509/playlist.m3u8
-
-#EXTINF:-1, Miami Heat at Denver Nuggets -H6  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H6/playlist.m3u8
-
-#EXTINF:-1, Borussia Dortmund vs Internazionale S4  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/abr/abr-S-4/playlist.m3u8
-
-#EXTINF:-1, Chelsea vs Ajax -S2  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/abr/abr-S-2/playlist.m3u8
-
-#EXTINF:-1, Liverpool vs Genk -S3  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/abr/abr-S-3/playlist.m3u8
-
-#EXTINF:-1, Napoli vs Salzburg – S5  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/abr/abr-S-5/playlist.m3u8
-
-#EXTINF:-1, Zenit vs RB Leipzig -s4  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/abr/abr-S-4/playlist.m3u8
-
-#EXTINF:-1, Indiana Pacers at Charlotte Hornets -H1  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H1/playlist.m3u8
-
-#EXTINF:-1, Boston Celtics at Cleveland Cavaliers -H2  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H2/playlist.m3u8
-
-#EXTINF:-1, San Antonio Spurs at Atlanta Hawks -H3  (08:00 AM - 06:00 PM | CET)
+#EXTINF:-1, Lokomotiv Moskva vs Juventus -s3btespn  (08:00 AM - 06:00 PM | CET)
 http://103.194.171.4/live/H3/playlist.m3u8
 
-#EXTINF:-1, Los Angeles Lakers at Chicago Bulls -H4  (08:00 AM - 06:00 PM | CET)
+#EXTINF:-1, Orlando Magic at Dallas Mavericks -h7  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H7/playlist.m3u8
+
+#EXTINF:-1, PSG vs Club Brugge h1ss11  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H1/playlist.m3u8
+
+#EXTINF:-1, Philadelphia 76ers at Utah Jazz -h8  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H8/playlist.m3u8
+
+#EXTINF:-1, Crvena Zvezda vs Tottenham Hotspur -H2bt1  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H2/playlist.m3u8
+
+#EXTINF:-1, Milwaukee Bucks at Los Angeles Clippers -h6  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H6/playlist.m3u8
+
+#EXTINF:-1, Atalanta vs Manchester City -H4bt3  (08:00 AM - 06:00 PM | CET)
 http://103.194.171.4/live/H4/playlist.m3u8
 
-#EXTINF:-1, Orlando Magic at Oklahoma City Thunder -H5  (08:00 AM - 06:00 PM | CET)
+#EXTINF:-1, Bayer Leverkusen vs Atlético Madrid H6p2  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H6/playlist.m3u8
+
+#EXTINF:-1, New York Knicks at Detroit Pistons -h1  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H1/playlist.m3u8
+
+#EXTINF:-1, Washington Wizards at Indiana Pacers -h2  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H2/playlist.m3u8
+
+#EXTINF:-1, Chicago Bulls at Atlanta Hawks -h4  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H4/playlist.m3u8
+
+#EXTINF:-1, Golden State Warriors at Houston Rockets -h4  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H4/playlist.m3u8
+
+#EXTINF:-1, Real Madrid vs Galatasaray -H5btespn  (08:00 AM - 06:00 PM | CET)
 http://103.194.171.4/live/H5/playlist.m3u8
+
+#EXTINF:-1, Sacramento Kings at Toronto Raptors -H5  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H5/playlist.m3u8
+
+#EXTINF:-1, Bayern München vs Olympiakos Piraeus – s2bt1  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/abr/abr-S-2/playlist.m3u8
+
+#EXTINF:-1, Minnesota Timberwolves at Memphis Grizzlies  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/H4/playlist.m3u8
 

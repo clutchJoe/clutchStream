@@ -1,23 +1,7 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.6/21:20)
+#EXTINF:-1, Latest update (11.7/20:10)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Miami Heat vs Denver Nuggets  (November 5  2019)
-http://live.solaris.best/live/Heat/playlist.m3u8
-
-#EXTINF:-1, Los Angeles Lakers vs Chicago Bulls  (November 5  2019)
-http://live.solaris.best/live/Lakers/playlist.m3u8
-
-#EXTINF:-1, Orlando Magic vs Oklahoma City Thunder  (November 5  2019)
-http://live.solaris.best/live/Magic/playlist.m3u8
-
-#EXTINF:-1, San Antonio Spurs vs Atlanta Hawks  (November 5  2019)
-http://live.solaris.best/live/Spurs/playlist.m3u8
-
-#EXTINF:-1, Boston Celtics vs Cleveland Cavaliers  (November 5  2019)
-http://live.solaris.best/live/Celtics/playlist.m3u8
-
-#EXTINF:-1, Indiana Pacers vs Charlotte Hornets  (November 5  2019)
-http://live.solaris.best/live/Pacers/playlist.m3u8
-
+#EXTINF:-1, No Signal
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8

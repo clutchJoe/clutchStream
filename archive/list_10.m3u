@@ -1,0 +1,59 @@
+#EXTM3U
+
+#EXTINF:-1, Latest update (11.7/20:10)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (Away) New York Knicks VS Detroit Pistons  (7:00PM ET)
+http://the.piercez.xyz/show/nyk/playlist.m3u8
+
+#EXTINF:-1, (Home) New York Knicks VS Detroit Pistons  (7:00PM ET)
+http://the.piercez.xyz/show/det/playlist.m3u8
+
+#EXTINF:-1, (Away) Washington Wizards VS Indiana Pacers  (7:00PM ET)
+http://the.piercez.xyz/show/was/playlist.m3u8
+
+#EXTINF:-1, (Home) Washington Wizards VS Indiana Pacers  (7:00PM ET)
+http://the.piercez.xyz/show/ind/playlist.m3u8
+
+#EXTINF:-1, (Away) Chicago Bulls VS Atlanta Hawks  (7:30PM ET)
+http://the.piercez.xyz/show/chi/playlist.m3u8
+
+#EXTINF:-1, (Home) Chicago Bulls VS Atlanta Hawks  (7:30PM ET)
+http://the.piercez.xyz/show/atl/playlist.m3u8
+
+#EXTINF:-1, (Away) Sacramento Kings VS Toronto Raptors  (7:30PM ET)
+http://the.piercez.xyz/show/sac/playlist.m3u8
+
+#EXTINF:-1, (Home) Sacramento Kings VS Toronto Raptors  (7:30PM ET)
+http://the.piercez.xyz/show/tor/playlist.m3u8
+
+#EXTINF:-1, (Away) Golden State Warriors VS Houston Rockets  (7:30PM ET)
+http://the.piercez.xyz/show/gsw/playlist.m3u8
+
+#EXTINF:-1, (Home) Golden State Warriors VS Houston Rockets  (7:30PM ET)
+http://the.piercez.xyz/show/hou/playlist.m3u8
+
+#EXTINF:-1, (Away) Minnesota Timberwolves VS Memphis Grizzlies  (8:00PM ET)
+http://the.piercez.xyz/show/min/playlist.m3u8
+
+#EXTINF:-1, (Home) Minnesota Timberwolves VS Memphis Grizzlies  (8:00PM ET)
+http://the.piercez.xyz/show/mem/playlist.m3u8
+
+#EXTINF:-1, (Away) Orlando Magic VS Dallas Mavericks  (8:30PM ET)
+http://the.piercez.xyz/show/orl/playlist.m3u8
+
+#EXTINF:-1, (Home) Orlando Magic VS Dallas Mavericks  (8:30PM ET)
+http://the.piercez.xyz/show/dal/playlist.m3u8
+
+#EXTINF:-1, (Away) Philadelphia 76ers VS Utah Jazz  (9:00PM ET)
+http://the.piercez.xyz/show/phi/playlist.m3u8
+
+#EXTINF:-1, (Home) Philadelphia 76ers VS Utah Jazz  (9:00PM ET)
+http://the.piercez.xyz/show/uta/playlist.m3u8
+
+#EXTINF:-1, (Away) Millwaukee Bucks VS Los Angeles Lakers  (10:00PM ET)
+http://the.piercez.xyz/show/mil/playlist.m3u8
+
+#EXTINF:-1, (Home) Millwaukee Bucks VS Los Angeles Lakers  (10:00PM ET)
+http://the.piercez.xyz/show/lac/playlist.m3u8
+
