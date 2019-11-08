@@ -5,7 +5,6 @@ module.exports = async (page) => {
     // const bowser = await puppeteer.launch({ headless: false }); // { headless: false },{ args: ['--no-sandbox'] }
     // const page = await bowser.newPage();
     await page.goto(process.env.SITE_2, { waitUntil: "networkidle2" });
-
     const data = await page.evaluate(() => {
         // const tar = Array.from(document.querySelectorAll("div.mec-has-event")).reverse()[0];
         // tar.click();
@@ -50,10 +49,9 @@ module.exports = async (page) => {
 
     if(!(data == false)){
         for (let item of data) {
-            await page.goto(item.link, { waitUntil: "networkidle2" });
-            
             let sourceLink = "";
             try {
+                await page.goto(item.link, { waitUntil: "networkidle2" });
                 sourceLink = await page.$$eval(
                     "body script",
                     els => {
@@ -72,7 +70,7 @@ module.exports = async (page) => {
                     }
                 );
             } catch (err) {
-                console.error("something wrong...");
+                console.error("site_2: something wrong on sourceLink...");
                 item.head = "(Wrong) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
                 continue;

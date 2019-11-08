@@ -44,9 +44,9 @@ module.exports = async (page) => {
 
     if(!(data == false)){
         for (let item of data) {
-            await page.goto(item.link, { waitUntil: "networkidle2" });
             let sourceLink = "";
             try {
+                await page.goto(item.link, { waitUntil: "networkidle2" });
                 sourceLink = await page.$$eval(
                     "body script",
                     els =>
@@ -55,7 +55,7 @@ module.exports = async (page) => {
                             .split('"')[1]
                 );
             } catch (err) {
-                console.error("something wrong...");
+                console.error("site_7: something wrong on sourceLink...");
                 item.head = "(Wrong) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
                 continue;

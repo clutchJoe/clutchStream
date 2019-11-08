@@ -5,7 +5,6 @@ module.exports = async (page) => {
     // const bowser = await puppeteer.launch({ headless: false }); // { headless: false },{ args: ['--no-sandbox'] }
     // const page = await bowser.newPage();
     await page.goto(process.env.SITE_9, { waitUntil: "networkidle2" });
-
     const data = await page.evaluate(() => {
         let lists = [];
         // const temp = Array.from(document.querySelectorAll("div.page-content p")[1].children);
@@ -33,20 +32,20 @@ module.exports = async (page) => {
 
     if(!(data == false)){
         for (let item of data) {
-            await page.goto(item.link, { waitUntil: "networkidle2" });
-            await page.frames();
             let phpLink = "";
             try {
+                await page.goto(item.link, { waitUntil: "networkidle2" });
+                await page.frames();
                 phpLink = await page.$$eval("iframe", iframes => iframes.filter(iframe => iframe.src.endsWith(".php"))[0].src);
             } catch (err) {
-                console.error("No php link...");
+                console.error("site_9: No php link...");
                 item.head = "(No Signal) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
                 continue;
             }
-            await page.goto(phpLink, { waitUntil: "networkidle2" });
             let sourceLink = "";
             try {
+                await page.goto(phpLink, { waitUntil: "networkidle2" });
                 sourceLink = await page.$$eval(
                     "body script",
                     els =>
@@ -55,7 +54,7 @@ module.exports = async (page) => {
                             .split("')")[0]
                 );
             } catch (err) {
-                console.error("something wrong...");
+                console.error("site_9: something wrong on sourceLink...");
                 item.head = "(Wrong) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
                 continue;

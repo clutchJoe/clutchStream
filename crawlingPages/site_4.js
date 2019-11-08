@@ -5,7 +5,6 @@ module.exports = async (page) => {
     // const bowser = await puppeteer.launch({ headless: false }); // { headless: false },{ args: ['--no-sandbox'] }
     // const page = await bowser.newPage();
     await page.goto(process.env.SITE_4, { waitUntil: "networkidle2" });
-
     const data = await page.evaluate(() => {
         let lists = [];
         const items = Array.from(document.querySelectorAll("div.score-tile__status a.score-tile-wrapper"));
@@ -42,12 +41,14 @@ module.exports = async (page) => {
             item.head = tar.head;
             item.updateTime = tar.updateTime;
             if (tar.phpLink === "empty") {
+                console.error("site_4: No php link...");
                 item.head = "(No Signal) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+                continue;
             } else {
-                await page.goto(tar.phpLink, { waitUntil: "networkidle2" });
                 let sourceLink = "";
                 try {
+                    await page.goto(tar.phpLink, { waitUntil: "networkidle2" });
                     sourceLink = await page.$$eval(
                         "body script",
                         els =>
@@ -56,7 +57,7 @@ module.exports = async (page) => {
                                 .split("'")[0]
                     );
                 } catch (err) {
-                    console.error("something wrong...");
+                    console.error("site_4: something wrong on sourceLink...");
                     item.head = "(Wrong) "  + item.head;
                     item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
                     continue;
