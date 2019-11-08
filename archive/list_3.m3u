@@ -1,53 +1,7 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.7/20:10)
+#EXTINF:-1, Latest update (11.8/16:9)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Lokomotiv Moskva vs Juventus -s3btespn  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H3/playlist.m3u8
-
-#EXTINF:-1, Orlando Magic at Dallas Mavericks -h7  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H7/playlist.m3u8
-
-#EXTINF:-1, PSG vs Club Brugge h1ss11  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H1/playlist.m3u8
-
-#EXTINF:-1, Philadelphia 76ers at Utah Jazz -h8  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H8/playlist.m3u8
-
-#EXTINF:-1, Crvena Zvezda vs Tottenham Hotspur -H2bt1  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H2/playlist.m3u8
-
-#EXTINF:-1, Milwaukee Bucks at Los Angeles Clippers -h6  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H6/playlist.m3u8
-
-#EXTINF:-1, Atalanta vs Manchester City -H4bt3  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H4/playlist.m3u8
-
-#EXTINF:-1, Bayer Leverkusen vs Atlético Madrid H6p2  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H6/playlist.m3u8
-
-#EXTINF:-1, New York Knicks at Detroit Pistons -h1  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H1/playlist.m3u8
-
-#EXTINF:-1, Washington Wizards at Indiana Pacers -h2  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H2/playlist.m3u8
-
-#EXTINF:-1, Chicago Bulls at Atlanta Hawks -h4  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H4/playlist.m3u8
-
-#EXTINF:-1, Golden State Warriors at Houston Rockets -h4  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H4/playlist.m3u8
-
-#EXTINF:-1, Real Madrid vs Galatasaray -H5btespn  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H5/playlist.m3u8
-
-#EXTINF:-1, Sacramento Kings at Toronto Raptors -H5  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H5/playlist.m3u8
-
-#EXTINF:-1, Bayern München vs Olympiakos Piraeus – s2bt1  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/abr/abr-S-2/playlist.m3u8
-
-#EXTINF:-1, Minnesota Timberwolves at Memphis Grizzlies  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H4/playlist.m3u8
-
+#EXTINF:-1, No Signal
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8

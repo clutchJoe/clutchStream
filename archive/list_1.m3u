@@ -1,32 +1,29 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.7/20:10)
+#EXTINF:-1, Latest update (11.8/16:9)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, New York Knicks vs Detroit Pistons  (November 6th  2019 - 7:00 PM ET)
-http://the.piercez.xyz/show/nyk/playlist.m3u8
+#EXTINF:-1, (Away) Boston Celtics VS Charlotte Hornets  (8:00PM ET)
+http://yas.cavaliersz.xyz/show/bos/playlist.m3u8
 
-#EXTINF:-1, Washington Wizards vs Indiana Pacers  (November 6th  2019 - 7:00 PM ET)
-http://the.piercez.xyz/show/was/playlist.m3u8
+#EXTINF:-1, (Home) Boston Celtics VS Charlotte Hornets  (8:00PM ET)
+http://yas.cavaliersz.xyz/show/tnt/playlist.m3u8
 
-#EXTINF:-1, Chicago Bulls vs Atlanta Hawks  (November 6th  2019 - 7:30 PM ET)
-http://the.piercez.xyz/show/chi/playlist.m3u8
+#EXTINF:-1, (Away) Oklahoma City Thunder VS San Antonio Spurs  (8:30PM ET)
+http://yas.cavaliersz.xyz/show/okc/playlist.m3u8
 
-#EXTINF:-1, Sacramento Kings vs Toronto Raptors  (November 6th  2019 - 7:30 PM ET)
-http://the.piercez.xyz/show/tor/playlist.m3u8
+#EXTINF:-1, (Home) Oklahoma City Thunder VS San Antonio Spurs  (8:30PM ET)
+http://yas.cavaliersz.xyz/show/sas/playlist.m3u8
 
-#EXTINF:-1, Golden State Warriors vs Houston Rockets  (November 6th  2019 - 7:30 PM ET)
-http://zubacz.xyz/neinz/video/espn/d0695f6fa2f143eb95c7a41d96d581c4.m3u8
+#EXTINF:-1, (Away) Miami Heat VS Phoenix Suns  (9:00PM ET)
+http://yas.cavaliersz.xyz/show/mia/playlist.m3u8
 
-#EXTINF:-1, Minnesota Timberwolves vs Memphis Grizzlies  (November 6th  2019 - 8:00 PM ET)
-http://the.piercez.xyz/show/min/playlist.m3u8
+#EXTINF:-1, (Home) Miami Heat VS Phoenix Suns  (9:00PM ET)
+http://yas.cavaliersz.xyz/show/phx/playlist.m3u8
 
-#EXTINF:-1, Orlando Magic vs Dallas Mavericks  (November 6th  2019 - 8:30 PM ET)
-http://the.piercez.xyz/show/dal/playlist.m3u8
+#EXTINF:-1, (Away) Portland Trail Blazers VS Los Angeles Clippers  (10:30PM ET)
+http://yas.cavaliersz.xyz/show/tnt/playlist.m3u8
 
-#EXTINF:-1, Philadelphia 76ers vs Utah Jazz  (November 6th  2019 - 9:00 PM ET)
-http://the.piercez.xyz/show/phi/playlist.m3u8
-
-#EXTINF:-1, Milwaukee Bucks vs LA Clippers  (November 6th  2019 - 10:30 PM ET)
-http://zubacz.xyz/neinz/video/espn/d0695f6fa2f143eb95c7a41d96d581c4.m3u8
+#EXTINF:-1, (Home) Portland Trail Blazers VS Los Angeles Clippers  (10:30PM ET)
+http://yas.cavaliersz.xyz/show/tnt/playlist.m3u8
 

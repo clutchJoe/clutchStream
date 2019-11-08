@@ -9,8 +9,6 @@ const site_6 = require("./crawlingPages/site_6");
 const site_7 = require("./crawlingPages/site_7");
 const site_8 = require("./crawlingPages/site_8");
 const site_9 = require("./crawlingPages/site_9");
-const site_10 = require("./crawlingPages/site_10");
-const site_11 = require("./crawlingPages/site_11");
 const writeM3u = require("./writeFile/m3u");
 const writeConf = require("./writeFile/conf");
 
@@ -94,20 +92,6 @@ const writeConf = require("./writeFile/conf");
         data.push([]);
         console.error(`Site_9 crawling has some error...`);
     }
-    try {
-        const p10 = await site_10(page);
-        data.push(p10);
-    } catch (err){
-        data.push([]);
-        console.error(`Site_10 crawling has some error...`);
-    }
-    try {
-        const p11 = await site_11(page);
-        data.push(p11);
-    } catch (err){
-        data.push([]);
-        console.error(`Site_11 crawling has some error...`);
-    }
     
     await bowser.close();
     console.log(data);
@@ -121,8 +105,6 @@ const writeConf = require("./writeFile/conf");
     writeM3u(data[6], "list_7.m3u");
     writeM3u(data[7], "list_8.m3u");
     writeM3u(data[8], "list_9.m3u");
-    writeM3u(data[9], "list_10.m3u");
-    writeM3u(data[10], "list_11.m3u");
     writeConf(data);
     console.log(new Date());
 })();
