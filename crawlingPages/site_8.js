@@ -5,22 +5,19 @@ module.exports = async (page) => {
     // const bowser = await puppeteer.launch({ headless: false }); // { headless: false },{ args: ['--no-sandbox'] }
     // const page = await bowser.newPage();
     await page.goto(process.env.SITE_8, { waitUntil: "networkidle2" });
-
     const data = await page.evaluate(() => {
         let lists = [];
-        const items = Array.from(document.querySelectorAll("div.entry-content p"));
+        const items = Array.from(document.querySelectorAll("div.evsk"));
         // 判断是否为空数组
         if(items == false){
             return items;
         } else {
             for (let item of items) {
                 let data = {};
-                if (item.childElementCount != 0) {
-                    data.head = item.children[1].innerText.trim();
-                    data.updateTime = `${new Date().getMonth() + 1}.${new Date().getDate()}`;
-                    data.link = item.children[1].href;
-                    lists.push(data);
-                }
+                data.head = item.children[1].children[1].children[0].children[0].children[0].innerText.trim();
+                data.updateTime = item.children[1].children[1].children[0].children[0].children[1].innerText.split('  ')[0].trim().split("\n\n").join('');
+                data.link = item.children[0].href;
+                lists.push(data);
             }
             return lists;
         }
@@ -28,20 +25,36 @@ module.exports = async (page) => {
 
     if(!(data == false)){
         for (let item of data) {
-            await page.goto(item.link, { waitUntil: "networkidle2" });
-            await page.frames();
-            let phpLink = "";
+            let temp = "";
             try {
-                phpLink = await page.$$eval("iframe", iframes => iframes.filter(iframe => iframe.hasAttribute("sandbox"))[0].src);
+                await page.goto(item.link, { waitUntil: "networkidle2" });
+                temp = await page.$$eval(
+                    "table#dataTable tbody", 
+                    els => 
+                    Array.from(els[1].children)
+                    .find(i => i.children[1].innerText.indexOf("buffstream") != -1)
+                    .children[3].children[0].href
+                );
             } catch (err) {
-                console.error("No php link...");
+                console.error("site_8: No temp link...");
                 item.head = "(No Signal) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
                 continue;
             }
-            await page.goto(phpLink, { waitUntil: "networkidle2" });
+            let phpLink = "";
+            try {
+                await page.goto(temp, { waitUntil: "networkidle2" });
+                await page.frames();
+                phpLink = await page.$eval("#play iframe", iframes => iframes.src);
+            } catch (err) {
+                console.error("site_8: No php link...");
+                item.head = "(No Signal) "  + item.head;
+                item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+                continue;
+            }
             let sourceLink = "";
             try {
+                await page.goto(phpLink, { waitUntil: "networkidle2" });
                 sourceLink = await page.$eval(
                     "body script",
                     el =>
@@ -51,7 +64,7 @@ module.exports = async (page) => {
                             .split("'")[0]
                 );
             } catch (err) {
-                console.error("something wrong...");
+                console.error("site_8: something wrong on sourceLink...");
                 item.head = "(Wrong) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
                 continue;

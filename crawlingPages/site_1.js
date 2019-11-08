@@ -5,19 +5,27 @@ module.exports = async (page) => {
     // const bowser = await puppeteer.launch({ headless: false }); // { headless: false },{ args: ['--no-sandbox'] }
     // const page = await bowser.newPage();
     await page.goto(process.env.SITE_1, { waitUntil: "networkidle2" });
-
     const data = await page.evaluate(() => {
         let lists = [];
-        const items = Array.from(document.querySelectorAll(".container .col-md-8 a"));
+        const items = Array.from(document.querySelectorAll("tbody tr"));
+        items.shift();
         // 判断是否为空数组
         if(items == false){
             return items;
         } else {
             for (let item of items) {
                 let data = {};
-                data.head = item.children[0].children[1].children[0].innerText;
-                data.updateTime = item.children[0].children[1].children[1].innerText;
-                data.link = item.getAttribute("href");
+                const head = item.children[0].children[0].innerText.split(" live")[0] + " VS " + item.children[2].children[0].innerText.split(" live")[0];
+                let time = "";
+                item.children[1].childElementCount == 3 ? time = item.children[1].children[2].innerText : time = item.children[1].children[4].innerText;
+                data.head = "(Away) " + head;
+                data.updateTime = time;
+                data.link = item.children[0].children[0].href;
+                lists.push(data);
+                data = {};
+                data.head = "(Home) " + head;
+                data.updateTime = time;
+                data.link = item.children[2].children[0].href;
                 lists.push(data);
             }
             return lists;
@@ -26,21 +34,20 @@ module.exports = async (page) => {
 
     if(!(data == false)){
         for (let item of data) {
-            await page.goto(item.link, { waitUntil: "networkidle2" });
-            await page.frames();
             let phpLink = "";
             try {
-                phpLink = await page.$$eval("iframe", iframes => iframes.filter(iframe => iframe.src.endsWith(".php"))[0].src);
+                await page.goto(item.link, { waitUntil: "networkidle2" });
+                await page.frames();
+                phpLink = await page.$$eval("iframe", iframes => iframes.find(iframe => iframe.src.endsWith(".php")).src);
             } catch (err) {
-                console.error("No php link...");
+                console.error("site_1: No php link...");
                 item.head = "(No Signal) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
                 continue;
             }
-            // const phpLink = await page.$$eval("iframe", iframes => iframes.filter(iframe => iframe.src.endsWith(".php"))[0].src);
-            await page.goto(phpLink, { waitUntil: "networkidle2" });
             let sourceLink = "";
             try {
+                await page.goto(phpLink, { waitUntil: "networkidle2" });
                 sourceLink = await page.$eval(
                     "body script",
                     el =>
@@ -50,7 +57,7 @@ module.exports = async (page) => {
                             .split('",')[0]
                 );
             } catch (err) {
-                console.error("something wrong...");
+                console.error("site_1: something wrong on sourceLink...");
                 item.head = "(Wrong) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
                 continue;
