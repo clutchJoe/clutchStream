@@ -17,7 +17,7 @@ module.exports = async (page) => {
                 let data = {};
                 const head = item.children[0].children[0].innerText.split(" live")[0] + " VS " + item.children[2].children[0].innerText.split(" live")[0];
                 let time = "";
-                item.children[1].childElementCount == 3 ? time = item.children[1].children[2].innerText : time = item.children[1].children[4].innerText;
+                item.children[1].childElementCount == 3 ? time = item.children[1].children[2].innerText : time = item.children[1].children[3].innerText;
                 data.head = "(Away) " + head;
                 data.updateTime = time;
                 data.link = item.children[0].children[0].href;
