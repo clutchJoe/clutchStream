@@ -1,32 +1,38 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.8/16:9)
+#EXTINF:-1, Latest update (11.9/11:8)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, DETROIT PISTONS VS NEW YORK KNICKS  (07/11/2019)
-http://34.94.164.78/live/vhi1/playlist.m3u8
+#EXTINF:-1, Cleveland Cavaliers vs Washington Wizards  (11.9)
+http://fdgjiisdfiekhtfgergs.sudlvneiap.xyz/live/1/playlist.m3u8
 
-#EXTINF:-1, INDIANA PACERS VS WASHINGTON WIZARDS  (07/11/2019)
-http://35.228.151.233/live/vhi2/playlist.m3u8
+#EXTINF:-1, Memphis Grizzlies vs Orlando Magic  (11.9)
+http://fdgjiisdfiekhtfgergs.sudlvneiap.xyz/live/2/playlist.m3u8
 
-#EXTINF:-1, ATLANTA HAWKS VS CHICAGO BULLS  (07/11/2019)
-http://35.228.152.71/live/vhi3/playlist.m3u8
+#EXTINF:-1, Detroit Pistons vs Indiana Pacers  (11.9)
+http://fdgjiisdfiekhtfgergs.sudlvneiap.xyz/live/3/playlist.m3u8
 
-#EXTINF:-1, HOUSTON ROCKETS VS GOLDEN STATE WARRIORS  (07/11/2019)
-http://34.94.164.78/live/vhi4/playlist.m3u8
+#EXTINF:-1, Sacramento Kings vs Atlanta Hawks  (11.9)
+http://fdgjiisdfiekhtfgergs.sudlvneiap.xyz/live/4/playlist.m3u8
 
-#EXTINF:-1, TORONTO RAPTORS VS SACRAMENTO KINGS  (07/11/2019)
-http://34.67.171.155/live/vhi5/playlist.m3u8
+#EXTINF:-1, Golden State Warriors vs Minnesota Timberwolves  (11.9)
+http://fdgjiisdfiekhtfgergs.sudlvneiap.xyz/live/5/playlist.m3u8
 
-#EXTINF:-1, MEMPHIS GRIZZLIES VS MINNESOTA TIMBERWOLVES  (07/11/2019)
-http://35.189.101.39/live/vhi6/playlist.m3u8
+#EXTINF:-1, Toronto Raptors vs New Orleans Pelicans  (11.9)
+http://fdgjiisdfiekhtfgergs.sudlvneiap.xyz/live/6/playlist.m3u8
 
-#EXTINF:-1, DALLAS MAVERICKS VS ORLANDO MAGIC  (07/11/2019)
-http://35.189.38.247/live/vhi7/playlist.m3u8
+#EXTINF:-1, New York Knicks vs Dallas Mavericks  (11.9)
+http://fdgjiisdfiekhtfgergs.sudlvneiap.xyz/live/7/playlist.m3u8
 
-#EXTINF:-1, UTAH JAZZ VS PHILADELPHIA 76ERS  (07/11/2019)
-http://34.77.155.99/live/vhi8/playlist.m3u8
+#EXTINF:-1, Milwaukee Bucks vs Utah Jazz  (11.9)
+http://fdgjiisdfiekhtfgergs.sudlvneiap.xyz/live/8/playlist.m3u8
 
-#EXTINF:-1, LOS ANGELES CLIPPERS VS MILWAUKEE BUCKS  (07/11/2019)
-http://34.76.96.98/live/vhi1/playlist.m3u8
+#EXTINF:-1, Philadelphia 76ers vs Denver Nuggets  (11.9)
+http://fdgjiisdfiekhtfgergs.sudlvneiap.xyz/live/9/playlist.m3u8
+
+#EXTINF:-1, Brooklyn Nets vs Portland Trail Blazers  (11.9)
+http://fdgjiisdfiekhtfgergs.sudlvneiap.xyz/live/1/playlist.m3u8
+
+#EXTINF:-1, Miami Heat vs Los Angeles Lakers  (11.9)
+http://fdgjiisdfiekhtfgergs.sudlvneiap.xyz/live/2/playlist.m3u8
 

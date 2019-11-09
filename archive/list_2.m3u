@@ -1,7 +1,35 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.8/16:9)
+#EXTINF:-1, Latest update (11.9/11:8)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, No Signal
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1, Warriors vs Timberwolves bx5  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.52:1935/hls/BOX-5/playlist.m3u8
+
+#EXTINF:-1, Raptors vs Pelicans bx6  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.52:1935/hls/BOX-6/playlist.m3u8
+
+#EXTINF:-1, Knicks vs Mavericks mma  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.52:1935/hls/MMA/playlist.m3u8
+
+#EXTINF:-1, 76ers vs Nuggets nfl  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.52:1935/hls/NFL/playlist.m3u8
+
+#EXTINF:-1, Bucks vs Jazz nfl1  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.52:1935/hls/NFL-1/playlist.m3u8
+
+#EXTINF:-1, Bellator 233: Salter vs. Van Steenis bx  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.52:1935/hls/NFL-8/playlist.m3u8
+
+#EXTINF:-1, Pistons vs Pacers bx1  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.52:1935/hls/BOX-1/playlist.m3u8
+
+#EXTINF:-1, Grizzlies vs Magic bx2  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.52:1935/hls/BOX-2/playlist.m3u8
+
+#EXTINF:-1, Cavaliers vs Wizards bx3  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.52:1935/hls/BOX-3/playlist.m3u8
+
+#EXTINF:-1, Kings vs Hawks  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.52:1935/hls/BOX-4/playlist.m3u8
+

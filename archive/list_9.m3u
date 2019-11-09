@@ -1,17 +1,38 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.8/16:9)
+#EXTINF:-1, Latest update (11.9/11:8)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Boston Celtics Vs Charlotte Hornets TNT USA  (08 November 2019)
-http://cdn2.hdstreams.club/live/ch8/index.m3u8
+#EXTINF:-1, Detroit Pistons Vs Indiana Pacers FOX SPORTS INDIANA  (09 November 2019)
+http://cdn3.hdstreams.club/live/ch10/index.m3u8
 
-#EXTINF:-1, Oklahoma City Thunder Vs San Antonio Spurs FOX SPORTS OKLAHOMA  (08 November 2019)
-http://cdn2.hdstreams.club/live/ch14/index.m3u8
+#EXTINF:-1, Memphis Grizzlies Vs Orlando Magic FOX SPORTS FLORIDA  (09 November 2019)
+http://cdn2.hdstreams.club/live/ch11/index.m3u8
 
-#EXTINF:-1, Miami Heat Vs Phoenix Suns FOX SPORTS ARIZONA  (08 November 2019)
-http://cdn2.hdstreams.club/live/ch15/index.m3u8
+#EXTINF:-1, Cleveland Cavaliers Vs Washington Wizards ESPN USA  (09 November 2019)
+http://cdn1.hdstreams.club/live/ch14/index.m3u8
 
-#EXTINF:-1, Portland Trail Blazers Vs LA Clippers TNT USA  (08 November 2019)
-http://cdn3.hdstreams.club/live/ch8/index.m3u8
+#EXTINF:-1, Sacramento Kings Vs Atlanta Hawks NBC SPORTS CALIFORNIA  (09 November 2019)
+http://cdn1.hdstreams.club/live/ch15/index.m3u8
+
+#EXTINF:-1, Golden State Warriors Vs Minnesota Timberwolves FOX SPORTS NORTH  (09 November 2019)
+http://cdn3.hdstreams.club/live/ch16/index.m3u8
+
+#EXTINF:-1, Toronto Raptors Vs New Orleans Pelicans FOX SPORTS NEW ORLEANS  (09 November 2019)
+http://cdn2.hdstreams.club/live/ch17/index.m3u8
+
+#EXTINF:-1, New York Knicks Vs Dallas Mavericks MSG  (09 November 2019)
+http://cdn3.hdstreams.club/live/ch18/index.m3u8
+
+#EXTINF:-1, Philadelphia 76ers Vs Denver Nuggets NBC SPORTS PHILADELPHIA  (09 November 2019)
+http://cdn1.hdstreams.club/live/ch19/index.m3u8
+
+#EXTINF:-1, Milwaukee Bucks Vs Utah Jazz FOX SPORTS WISCONSIN  (09 November 2019)
+http://cdn3.hdstreams.club/live/ch20/index.m3u8
+
+#EXTINF:-1, Brooklyn Nets Vs Portland Trail Blazers Yes Network  (09 November 2019)
+http://cdn1.hdstreams.club/live/ch21/index.m3u8
+
+#EXTINF:-1, Miami Heat Vs Los Angeles Lakers NBA TV  (09 November 2019)
+http://cdn1.hdstreams.club/live/ch22/index.m3u8
 

@@ -1,29 +1,71 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.8/16:9)
+#EXTINF:-1, Latest update (11.9/11:8)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (Away) Boston Celtics VS Charlotte Hornets  (8:00PM ET)
-http://yas.cavaliersz.xyz/show/bos/playlist.m3u8
+#EXTINF:-1, (Away) Detroit Pistons VS Indiana Pacers  (7:00PM ET)
+http://thu.allenz.xyz/show/det/playlist.m3u8
 
-#EXTINF:-1, (Home) Boston Celtics VS Charlotte Hornets  (8:00PM ET)
-http://yas.cavaliersz.xyz/show/tnt/playlist.m3u8
+#EXTINF:-1, (Home) Detroit Pistons VS Indiana Pacers  (7:00PM ET)
+http://thu.allenz.xyz/show/ind/playlist.m3u8
 
-#EXTINF:-1, (Away) Oklahoma City Thunder VS San Antonio Spurs  (8:30PM ET)
-http://yas.cavaliersz.xyz/show/okc/playlist.m3u8
+#EXTINF:-1, (Away) Memphis Grizzlies VS Orlando Magic  (7:00PM ET)
+http://thu.allenz.xyz/show/mem/playlist.m3u8
 
-#EXTINF:-1, (Home) Oklahoma City Thunder VS San Antonio Spurs  (8:30PM ET)
-http://yas.cavaliersz.xyz/show/sas/playlist.m3u8
+#EXTINF:-1, (Home) Memphis Grizzlies VS Orlando Magic  (7:00PM ET)
+http://thu.allenz.xyz/show/orl/playlist.m3u8
 
-#EXTINF:-1, (Away) Miami Heat VS Phoenix Suns  (9:00PM ET)
-http://yas.cavaliersz.xyz/show/mia/playlist.m3u8
+#EXTINF:-1, (Away) Cleveland Cavaliers VS Washington Wizards  (7:00PM ET)
+http://thu.allenz.xyz/show/cle/playlist.m3u8
 
-#EXTINF:-1, (Home) Miami Heat VS Phoenix Suns  (9:00PM ET)
-http://yas.cavaliersz.xyz/show/phx/playlist.m3u8
+#EXTINF:-1, (Home) Cleveland Cavaliers VS Washington Wizards  (7:00PM ET)
+http://thu.allenz.xyz/show/was/playlist.m3u8
 
-#EXTINF:-1, (Away) Portland Trail Blazers VS Los Angeles Clippers  (10:30PM ET)
-http://yas.cavaliersz.xyz/show/tnt/playlist.m3u8
+#EXTINF:-1, (Away) Sacramento Kings VS Atlanta Hawks  (7:30PM ET)
+http://thu.allenz.xyz/show/sac/playlist.m3u8
 
-#EXTINF:-1, (Home) Portland Trail Blazers VS Los Angeles Clippers  (10:30PM ET)
-http://yas.cavaliersz.xyz/show/tnt/playlist.m3u8
+#EXTINF:-1, (Home) Sacramento Kings VS Atlanta Hawks  (7:30PM ET)
+http://thu.allenz.xyz/show/atl/playlist.m3u8
+
+#EXTINF:-1, (Away) Golden State Warriors VS Minnesota Timberwolves  (8:00PM ET)
+http://thu.allenz.xyz/show/gsw/playlist.m3u8
+
+#EXTINF:-1, (Home) Golden State Warriors VS Minnesota Timberwolves  (8:00PM ET)
+http://thu.allenz.xyz/show/min/playlist.m3u8
+
+#EXTINF:-1, (Away) Toronto Raptors VS New Orleans Pelicans  (8:00PM ET)
+http://thu.allenz.xyz/show/tor/playlist.m3u8
+
+#EXTINF:-1, (Home) Toronto Raptors VS New Orleans Pelicans  (8:00PM ET)
+http://thu.allenz.xyz/show/nop/playlist.m3u8
+
+#EXTINF:-1, (No Signal) (Away) New York Knicks VS Dallas Mavericks  (8:30PM ET)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) (Home) New York Knicks VS Dallas Mavericks  (8:30PM ET)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (No Signal) (Away) Philadelphia 76ers VS Denver Nuggets  (9:00PM ET)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (Home) Philadelphia 76ers VS Denver Nuggets  (9:00PM ET)
+http://thu.allenz.xyz/show/den/playlist.m3u8
+
+#EXTINF:-1, (Away) Milwaukee Bucks VS Utah Jazz  (9:00PM ET)
+http://thu.allenz.xyz/show/mil/playlist.m3u8
+
+#EXTINF:-1, (No Signal) (Home) Milwaukee Bucks VS Utah Jazz  (9:00PM ET)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+
+#EXTINF:-1, (Away) Brooklyn Nets VS Portland Trail Blazers  (10:00PM ET)
+http://thu.allenz.xyz/show/bkn/playlist.m3u8
+
+#EXTINF:-1, (Home) Brooklyn Nets VS Portland Trail Blazers  (10:00PM ET)
+http://thu.allenz.xyz/show/por/playlist.m3u8
+
+#EXTINF:-1, (Away) Miami Heat VS Los Angeles Lakers  (10:30PM ET)
+http://thu.allenz.xyz/show/mia/playlist.m3u8
+
+#EXTINF:-1, (Home) Miami Heat VS Los Angeles Lakers  (10:30PM ET)
+http://thu.allenz.xyz/show/lal/playlist.m3u8
 

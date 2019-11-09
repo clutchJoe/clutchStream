@@ -1,17 +1,38 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.8/16:9)
+#EXTINF:-1, Latest update (11.9/11:8)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Portland Trail Blazers at Los Angeles Clippers  (November 7  2019)
-http://live.solaris.best/live/Celtics-Clippers/playlist.m3u8
+#EXTINF:-1, Miami Heat at Los Angeles Lakers  (November 8  2019)
+http://live.solaris.best/live/Heat/playlist.m3u8
 
-#EXTINF:-1, Miami Heat at Phoenix Suns  (November 7  2019)
-http://live.solaris.best/live/Suns/playlist.m3u8
+#EXTINF:-1, Brooklyn Nets at Portland Trail Blazers  (November 8  2019)
+http://live.solaris.best/live/Nets/playlist.m3u8
 
-#EXTINF:-1, Oklahoma City Thunder at San Antonio Spurs  (November 7  2019)
-http://live.solaris.best/live/Thunder/playlist.m3u8
+#EXTINF:-1, Milwaukee Bucks at Utah Jazz  (November 8  2019)
+http://live.solaris.best/live/Bucks/playlist.m3u8
 
-#EXTINF:-1, Boston Celtics at Charlotte Hornets  (November 7  2019)
-http://live.solaris.best/live/Celtics-Clippers/playlist.m3u8
+#EXTINF:-1, Philadelphia 76ers at Denver Nuggets  (November 8  2019)
+http://live.solaris.best/live/76ers/playlist.m3u8
+
+#EXTINF:-1, New York Knicks at Dallas Mavericks  (November 8  2019)
+http://live.solaris.best/live/Knicks/playlist.m3u8
+
+#EXTINF:-1, Golden State Warriors at Minnesota Timberwolves  (November 8  2019)
+http://live.solaris.best/live/Warriors/playlist.m3u8
+
+#EXTINF:-1, Toronto Raptors at New Orleans Pelicans  (November 8  2019)
+http://live.solaris.best/live/Raptors/playlist.m3u8
+
+#EXTINF:-1, Sacramento Kings at Atlanta Hawks  (November 8  2019)
+http://live.solaris.best/live/Kings/playlist.m3u8
+
+#EXTINF:-1, Cleveland Cavaliers at Washington Wizards  (November 8  2019)
+http://live.solaris.best/live/Cavaliers/playlist.m3u8
+
+#EXTINF:-1, Memphis Grizzlies at Orlando Magic  (November 8  2019)
+http://live.solaris.best/live/Grizzlies/playlist.m3u8
+
+#EXTINF:-1, Detroit Pistons at Indiana Pacers  (November 8  2019)
+http://live.solaris.best/live/Pistons/playlist.m3u8
 
