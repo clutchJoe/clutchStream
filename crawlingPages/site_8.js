@@ -32,7 +32,7 @@ module.exports = async (page) => {
                     "table#dataTable tbody", 
                     els => 
                     Array.from(els[1].children)
-                    .find(i => i.children[1].innerText.indexOf("buffstream") != -1)
+                    .find(i => i.children[1].innerText.indexOf("givemeredditstream") != -1)
                     .children[3].children[0].href
                 );
             } catch (err) {
@@ -41,27 +41,15 @@ module.exports = async (page) => {
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
                 continue;
             }
-            let phpLink = "";
-            try {
-                await page.goto(temp, { waitUntil: "networkidle2" });
-                await page.frames();
-                phpLink = await page.$eval("#play iframe", iframes => iframes.src);
-            } catch (err) {
-                console.error("site_8: No php link...");
-                item.head = "(No Signal) "  + item.head;
-                item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
-                continue;
-            }
             let sourceLink = "";
             try {
-                await page.goto(phpLink, { waitUntil: "networkidle2" });
-                sourceLink = await page.$eval(
+                await page.goto(temp, { waitUntil: "networkidle2" });
+                sourceLink = await page.$$eval(
                     "body script",
-                    el =>
-                        el.innerText
-                            .trim()
-                            .split("atob('")[1]
-                            .split("'")[0]
+                    els =>
+                        els.find(i => i.innerText.indexOf("Clappr.Player") != -1).innerText
+                            .split("source:")[1]
+                            .split("'")[1]
                 );
             } catch (err) {
                 console.error("site_8: something wrong on sourceLink...");
@@ -74,7 +62,7 @@ module.exports = async (page) => {
                 item.head = "(No Signal) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
             }else{
-                item.link = Buffer.from(sourceLink, 'base64').toString();
+                item.link = sourceLink;
             }
         }
     }
