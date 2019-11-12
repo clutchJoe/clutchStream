@@ -51,7 +51,8 @@ module.exports = async (page) => {
         for (let item of data) {
             let sourceLink = "";
             try {
-                await page.goto(item.link, { waitUntil: "networkidle2" });
+                await page.goto(item.link);
+                await page.waitForSelector('div#player');
                 sourceLink = await page.$$eval(
                     "body script",
                     els => {
