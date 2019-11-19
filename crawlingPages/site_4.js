@@ -14,6 +14,7 @@ module.exports = async (page) => {
         } else {
             for (let item of items) {
                 let data = {};
+                data.updateTime = item.innerText.split("\n").reverse()[0];
                 data.link = item.getAttribute("href");
                 lists.push(data);
             }
@@ -28,7 +29,7 @@ module.exports = async (page) => {
             const tar = await page.evaluate(() => {
                 let temp = {};
                 temp.head = document.querySelector("h1.article-title").innerText;
-                temp.updateTime = document.querySelector("dd.published").innerText;
+                // temp.updateTime = document.querySelector("dd.published").innerText;
                 const find = Array.from(document.querySelectorAll("body iframe"));
                 temp.phpLink = find.filter(i => i.src.endsWith(".php"));
                 if (temp.phpLink == false) {
@@ -39,7 +40,7 @@ module.exports = async (page) => {
                 return temp;
             });
             item.head = tar.head;
-            item.updateTime = tar.updateTime;
+            // item.updateTime = tar.updateTime;
             if (tar.phpLink === "empty") {
                 console.error("site_4: No php link...");
                 item.head = "(No Signal) "  + item.head;
