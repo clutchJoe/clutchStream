@@ -65,7 +65,7 @@ module.exports = async (page) => {
                 item.head = "(No Signal) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
             }else{
-                item.link = sourceLink;
+                item.link = Buffer.from(sourceLink, 'base64').toString();
             }
         }
     }
