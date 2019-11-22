@@ -21,7 +21,7 @@ module.exports = async (page) => {
             const utcTime = len + offset;
             return new Date(utcTime + 3600000 * i);
         }
-        const day = getLocalTime(-8).getDate();
+        const day = getLocalTime(8).getDate();
         const all = Array.from(document.querySelectorAll("div.mec-daily-view-day"));
         const id = all.find(i => i.innerText.trim() == day).id.split('day')[1];
         let lists = [];
