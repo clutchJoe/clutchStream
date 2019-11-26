@@ -23,7 +23,6 @@ const writeConf = require("./writeFile/conf");
     // await page_2.goto(process.env.SITE_2, { waitUntil: "networkidle2" });
     // const p1 = await site_1(page_1);
     // const p2 = await site_2(page_2);
-
     // Promise.all([p1,p2])
     //     .then(res => console.log(res))
     //     .then(res => bowser.close())

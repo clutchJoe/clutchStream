@@ -139,4 +139,5 @@ const site_9 = require("./crawlingPages/site_9");
     // await bowser.close();
     // console.log(data);
     // console.log(new Date());
+
 })();
