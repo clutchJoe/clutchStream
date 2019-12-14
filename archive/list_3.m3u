@@ -1,41 +1,38 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.9/11:8)
+#EXTINF:-1, Latest update (12.14/22:57)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Grizzlies vs Magic h1  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H1/playlist.m3u8
+#EXTINF:-1, REAL SOCIEDAD VS BARCELONA S3  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/S-3/playlist.m3u8
 
-#EXTINF:-1, Cavaliers vs Wizards h2  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H2/playlist.m3u8
+#EXTINF:-1, ATLÉTICO MADRID VS OSASUNA S3  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/S-3/playlist.m3u8
 
-#EXTINF:-1, Kings vs Hawks h3  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H3/playlist.m3u8
+#EXTINF:-1, BAYERN MÜNCHEN VS WERDER BREMEN S4  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/S-4/playlist.m3u8
 
-#EXTINF:-1, Warriors vs Timberwolves h4  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H4/playlist.m3u8
+#EXTINF:-1, MAINZ 05 VS BORUSSIA DORTMUND S5  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/S-5/playlist.m3u8
 
-#EXTINF:-1, Raptors vs Pelicans h5  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H5/playlist.m3u8
+#EXTINF:-1, NAPOLI VS PARMA S1  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/S-1/playlist.m3u8
 
-#EXTINF:-1, Knicks vs Mavericks -h6  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H6/playlist.m3u8
+#EXTINF:-1, LIVERPOOL VS WATFORD S2  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/S-2/playlist.m3u8
 
-#EXTINF:-1, 76ers vs Nuggets h7  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/h7/playlist.m3u8
+#EXTINF:-1, BURNLEY VS NEWCASTLE UNITED S7  (08:00 AM - 06:00 PM | CET)
+http://103.194.171.4/live/S-7/playlist.m3u8
 
-#EXTINF:-1, Bucks vs Jazz h8  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/h8/playlist.m3u8
+#EXTINF:-1, (Wrong) CHELSEA VS AFC BOURNEMOUTH S2  (08:00 AM - 06:00 PM | CET)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Brooklyn Nets at Portland Trail Blazers  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H2/playlist.m3u8
+#EXTINF:-1, (Wrong) LEICESTER CITY VS NORWICH CITY S6  (08:00 AM - 06:00 PM | CET)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Miami Heat at Los Angeles Lakers  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/H2/playlist.m3u8
+#EXTINF:-1, (Wrong) SHEFFIELD UNITED VS ASTON VILLA S8  (08:00 AM - 06:00 PM | CET)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Pistons vs Pacers box  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/box/playlist.m3u8
-
-#EXTINF:-1, Bellator 233: Salter vs. Van Steenis bellator  (08:00 AM - 06:00 PM | CET)
-http://103.194.171.4/live/h9/playlist.m3u8
+#EXTINF:-1, (Wrong) SOUTHAMPTON VS WEST HAM UNITED  (08:00 AM - 06:00 PM | CET)
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 

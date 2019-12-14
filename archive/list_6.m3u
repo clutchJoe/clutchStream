@@ -1,38 +1,7 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.9/11:8)
+#EXTINF:-1, Latest update (12.14/22:57)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Miami Heat vs Los Angeles Lakers  (11.9)
-http://live.livesport247.live/live/Lakers/playlist.m3u8
-
-#EXTINF:-1, (Wrong) Brooklyn Nets vs Portland Trail Blazers  (11.9)
+#EXTINF:-1, No Signal
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, Philadelphia 76ers vs Denver Nuggets  (11.9)
-http://live.livesport247.live/live/Philadelphia/playlist.m3u8
-
-#EXTINF:-1, Milwaukee Bucks vs Utah Jazz  (11.9)
-http://live.livesport247.live/live/Milwaukee/playlist.m3u8
-
-#EXTINF:-1, New York Knicks vs Dallas Mavericks  (11.9)
-http://live.livesport247.live/live/NewYork/playlist.m3u8
-
-#EXTINF:-1, Toronto Raptors vs New Orleans Pelicans  (11.9)
-http://live.livesport247.live/live/Toronto/playlist.m3u8
-
-#EXTINF:-1, Golden State Warriors vs Minnesota Timberwolves  (11.9)
-http://live.livesport247.live/live/Golden/playlist.m3u8
-
-#EXTINF:-1, Sacramento Kings vs Atlanta Hawks  (11.9)
-http://live.livesport247.live/live/Sacramento/playlist.m3u8
-
-#EXTINF:-1, Memphis Grizzlies vs Orlando Magic  (11.9)
-http://live.livesport247.live/live/Memphis/playlist.m3u8
-
-#EXTINF:-1, Cleveland Cavaliers vs Washington Wizards  (11.9)
-http://live.livesport247.live/live/Cleveland/playlist.m3u8
-
-#EXTINF:-1, Detroit Pistons vs Indiana Pacers  (11.9)
-http://live.livesport247.live/live/Detroit/playlist.m3u8
-

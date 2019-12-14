@@ -1,38 +1,7 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.9/11:8)
+#EXTINF:-1, Latest update (12.14/22:57)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, Detroit Pistons vs Indiana Pacers  (09 Oct 2019)
-http://xxi.yzachu.xyz/hls/live.m3u8
-
-#EXTINF:-1, Memphis Grizzlies vs Orlando Magic  (15 Oct 2019)
-http://xxi.yzachu.xyz/hls2/live.m3u8
-
-#EXTINF:-1, Cleveland Cavaliers vs Washington Wizards  (09 Oct 2019)
-http://xxi.yzachu.xyz/hls3/live.m3u8
-
-#EXTINF:-1, Sacramento Kings vs Atlanta Hawks  (09 Oct 2019)
-http://xxi.yzachu.xyz/hls4/live.m3u8
-
-#EXTINF:-1, Golden State Warriors vs Minnesota Timberwolves  (10 Oct 2019)
-http://xxi.yzachu.xyz/hls5/live.m3u8
-
-#EXTINF:-1, Toronto Raptors vs New Orleans Pelicans  (22 Oct 2019)
-http://xxi.yzachu.xyz/hls6/live.m3u8
-
-#EXTINF:-1, New York Knicks vs Dallas Mavericks  (09 Oct 2019)
-http://xxi.yzachu.xyz/hls7/live.m3u8
-
-#EXTINF:-1, (No Signal) Philadelphia 76ers vs Denver Nuggets  (09 Oct 2019)
+#EXTINF:-1, No Signal
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, Milwaukee Bucks vs Utah Jazz  (09 Oct 2019)
-http://xxi.yzachu.xyz/hls9/live.m3u8
-
-#EXTINF:-1, Brooklyn Nets vs Portland Trail Blazers  (09 Oct 2019)
-http://xxi.yzachu.xyz/hls3/live.m3u8
-
-#EXTINF:-1, Miami Heat vs Los Angeles Lakers  (22 Oct 2019)
-http://xxi.yzachu.xyz/hls/live.m3u8
-

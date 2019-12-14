@@ -1,38 +1,7 @@
 #EXTM3U
 
-#EXTINF:-1, Latest update (11.9/11:8)
+#EXTINF:-1, Latest update (12.14/22:57)
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
 
-#EXTINF:-1, (No Signal) CLEVELAND CAVALIERS VS WASHINGTON WIZARDS  (11/8/2019 07.00PM EST)
+#EXTINF:-1, No Signal
 https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) MEMPHIS GRIZZLIES VS ORLANDO MAGIC  (11/8/2019 07.00PM EST)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) DETROIT PISTONS VS INDIANA PACERS  (11/8/2019 07.00PM EST)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) SACRAMENTO KINGS VS ATLANTA HAWKS  (11/8/2019 07.30PM EST)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) GOLDEN STATE WARRIORS VS MINNESOTA TIMBERWOLVES  (11/8/2019 08.00PM EST)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) TORONTO RAPTORS VS NEW ORLEANS PELICANS  (11/8/2019 08.00PM EST)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) NEW YORK KNICKS VS DALLAS MAVERICKS  (11/8/2019 08.30PM EST)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) MILWAUKEE BUCKS VS UTAH JAZZ  (11/8/2019 09.00PM EST)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) PHILADELPHIA 76ERS VS DENVER NUGGETS  (11/8/2019 09.00PM EST)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, (No Signal) BROOKLYN NETS VS PORTLAND TRAIL BLAZERS  (11/8/2019 10.00PM EST)
-https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
-
-#EXTINF:-1, MIAMI HEAT VS LOS ANGELES LAKERS  (11/8/2019 10.30PM EST)
-http://topsy.geese.xyz/hls/lakers/playlist.m3u8
-
