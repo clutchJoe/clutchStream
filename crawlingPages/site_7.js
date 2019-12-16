@@ -47,7 +47,7 @@ module.exports = async (page) => {
                         .textContent.split('so = "')[1].split('";')[0]
                 );
             } catch (err) {
-                console.error("site_7: something wrong...");
+                console.error("site_7: something wrong on sourceLink...");
                 item.head = "(Wrong) "  + item.head;
                 item.link = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
                 continue;
